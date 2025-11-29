@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ua.onlinecourses.model.AssignmentTest" tests="21" skipped="0" failures="0" errors="0" timestamp="2025-11-29T19:46:44.855Z" hostname="DIANACOMP" time="0.184">
+  <properties/>
+  <testcase name="testAssignmentWithNullModule()" classname="ua.onlinecourses.model.AssignmentTest" time="0.014"/>
+  <testcase name="testAssignmentWithNullMark()" classname="ua.onlinecourses.model.AssignmentTest" time="0.011"/>
+  <testcase name="testInvalidDueDateTooFar()" classname="ua.onlinecourses.model.AssignmentTest" time="0.004"/>
+  <testcase name="testInvalidDueDateTooOld()" classname="ua.onlinecourses.model.AssignmentTest" time="0.003"/>
+  <testcase name="testValidDueDateBoundary()" classname="ua.onlinecourses.model.AssignmentTest" time="0.003"/>
+  <testcase name="[1] EXCELLENT, Your mark is excellent" classname="ua.onlinecourses.model.AssignmentTest" time="0.02"/>
+  <testcase name="[2] GOOD, Your mark is good." classname="ua.onlinecourses.model.AssignmentTest" time="0.003"/>
+  <testcase name="[3] PASSED, You passed the exam" classname="ua.onlinecourses.model.AssignmentTest" time="0.003"/>
+  <testcase name="[4] SATISFACTORY, Your mark is satisfactory." classname="ua.onlinecourses.model.AssignmentTest" time="0.003"/>
+  <testcase name="[5] LOW, Your mark is low." classname="ua.onlinecourses.model.AssignmentTest" time="0.004"/>
+  <testcase name="[6] NOT_PASSED, You did not pass the exam." classname="ua.onlinecourses.model.AssignmentTest" time="0.004"/>
+  <testcase name="testMarkEnumValues()" classname="ua.onlinecourses.model.AssignmentTest" time="0.001"/>
+  <testcase name="[1] Introduction, Basic concepts, 2025-12-06, 100, EXCELLENT" classname="ua.onlinecourses.model.AssignmentTest" time="0.017"/>
+  <testcase name="[2] Advanced, Complex topics, 2025-12-29, 50, GOOD" classname="ua.onlinecourses.model.AssignmentTest" time="0.003"/>
+  <testcase name="[3] Final Exam, Comprehensive test, 2025-10-29, 80, PASSED" classname="ua.onlinecourses.model.AssignmentTest" time="0.004"/>
+  <testcase name="[1] 0" classname="ua.onlinecourses.model.AssignmentTest" time="0.008"/>
+  <testcase name="[2] -1" classname="ua.onlinecourses.model.AssignmentTest" time="0.003"/>
+  <testcase name="[3] -10" classname="ua.onlinecourses.model.AssignmentTest" time="0.003"/>
+  <testcase name="[4] 101" classname="ua.onlinecourses.model.AssignmentTest" time="0.002"/>
+  <testcase name="[5] 200" classname="ua.onlinecourses.model.AssignmentTest" time="0.003"/>
+  <testcase name="testValidMaxPointsBoundary()" classname="ua.onlinecourses.model.AssignmentTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[нояб. 29, 2025 9:46:44 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: null, 2025-12-06, 100, EXCELLENT
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Test Module, Test content
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Test Module, content=Test content], 2025-12-06, 100, null
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Test Module, Test content
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Test Module, Test content
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Test Module, Test content
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Test Module, content=Test content], 2024-11-30, 100, EXCELLENT
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Test Module, content=Test content], 2026-11-28, 100, EXCELLENT
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Test Module, Test content
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Test Module, content=Test content], 2025-12-06, 100, EXCELLENT
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Test Module, Test content
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Test Module, content=Test content], 2025-12-06, 100, GOOD
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Test Module, Test content
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Test Module, content=Test content], 2025-12-06, 100, PASSED
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Test Module, Test content
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Test Module, content=Test content], 2025-12-06, 100, SATISFACTORY
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Test Module, Test content
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Test Module, content=Test content], 2025-12-06, 100, LOW
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Test Module, Test content
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Test Module, content=Test content], 2025-12-06, 100, NOT_PASSED
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Introduction, content=Basic concepts], 2025-12-06, 100, EXCELLENT
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Advanced, Complex topics
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Advanced, content=Complex topics], 2025-12-29, 50, GOOD
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Final Exam, Comprehensive test
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Final Exam, content=Comprehensive test], 2025-10-29, 80, PASSED
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Test Module, Test content
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Test Module, Test content
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Test Module, Test content
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Test Module, Test content
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Test Module, Test content
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Test Module, Test content
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Test Module, content=Test content], 2025-12-06, 1, EXCELLENT
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Test Module, content=Test content], 2025-12-06, 100, EXCELLENT
+]]></system-err>
+</testsuite>

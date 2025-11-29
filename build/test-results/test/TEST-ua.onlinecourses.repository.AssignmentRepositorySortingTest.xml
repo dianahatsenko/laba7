@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AssignmentRepository Sorting Tests" tests="15" skipped="0" failures="0" errors="0" timestamp="2025-11-29T19:46:46.179Z" hostname="DIANACOMP" time="0.092">
+  <properties/>
+  <testcase name="sortByMark should sort by mark" classname="ua.onlinecourses.repository.AssignmentRepositorySortingTest" time="0.009"/>
+  <testcase name="findByMark should work after sorting" classname="ua.onlinecourses.repository.AssignmentRepositorySortingTest" time="0.005"/>
+  <testcase name="sorting empty repository should return empty list" classname="ua.onlinecourses.repository.AssignmentRepositorySortingTest" time="0.004"/>
+  <testcase name="sortByModuleAndDate should group by module correctly" classname="ua.onlinecourses.repository.AssignmentRepositorySortingTest" time="0.006"/>
+  <testcase name="sortByModuleAndDate should sort by module then date" classname="ua.onlinecourses.repository.AssignmentRepositorySortingTest" time="0.005"/>
+  <testcase name="sorting should not modify the original repository" classname="ua.onlinecourses.repository.AssignmentRepositorySortingTest" time="0.004"/>
+  <testcase name="sortByDueDate should sort by due date ascending" classname="ua.onlinecourses.repository.AssignmentRepositorySortingTest" time="0.005"/>
+  <testcase name="sortByModuleTitle should sort by module title using lambda" classname="ua.onlinecourses.repository.AssignmentRepositorySortingTest" time="0.007"/>
+  <testcase name="sortByMaxPoints should sort by max points descending" classname="ua.onlinecourses.repository.AssignmentRepositorySortingTest" time="0.005"/>
+  <testcase name="sortByDueDateDesc should sort by due date descending" classname="ua.onlinecourses.repository.AssignmentRepositorySortingTest" time="0.004"/>
+  <testcase name="sortByMaxPoints with same points should maintain order" classname="ua.onlinecourses.repository.AssignmentRepositorySortingTest" time="0.005"/>
+  <testcase name="sorting single assignment should return list with that assignment" classname="ua.onlinecourses.repository.AssignmentRepositorySortingTest" time="0.007"/>
+  <testcase name="sortByMarkPointsDate should handle complex ordering" classname="ua.onlinecourses.repository.AssignmentRepositorySortingTest" time="0.009"/>
+  <testcase name="sortNaturally should use Comparable (dueDate)" classname="ua.onlinecourses.repository.AssignmentRepositorySortingTest" time="0.004"/>
+  <testcase name="sortByMarkPointsDate should sort by mark, points desc, then date" classname="ua.onlinecourses.repository.AssignmentRepositorySortingTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Assignment
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Багатопоточність, Threads
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-10, 100, EXCELLENT
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Колекції, content=List, Set, Map], 2025-05-15, 80, GOOD
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Потоки вводу-виводу, content=IO Streams], 2025-05-05, 90, PASSED
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Багатопоточність, content=Threads], 2025-05-20, 85, SATISFACTORY
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-08, 75, LOW
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Assignment items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.AssignmentRepository sortByMark
+INFO: Sorted Assignment by mark
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Assignment
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Багатопоточність, Threads
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-10, 100, EXCELLENT
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Колекції, content=List, Set, Map], 2025-05-15, 80, GOOD
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Потоки вводу-виводу, content=IO Streams], 2025-05-05, 90, PASSED
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Багатопоточність, content=Threads], 2025-05-20, 85, SATISFACTORY
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-08, 75, LOW
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Assignment items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.AssignmentRepository sortByMaxPoints
+INFO: Sorted Assignment by max points (descending)
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Assignment items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.AssignmentRepository findByMark
+INFO: Found 1 assignments with mark 'EXCELLENT'
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Assignment
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Багатопоточність, Threads
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-10, 100, EXCELLENT
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Колекції, content=List, Set, Map], 2025-05-15, 80, GOOD
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Потоки вводу-виводу, content=IO Streams], 2025-05-05, 90, PASSED
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Багатопоточність, content=Threads], 2025-05-20, 85, SATISFACTORY
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-08, 75, LOW
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Assignment
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Assignment items. Count: 0
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.AssignmentRepository sortByDueDate
+INFO: Sorted Assignment by due date
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Assignment items. Count: 0
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.AssignmentRepository sortByMaxPoints
+INFO: Sorted Assignment by max points (descending)
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Assignment items. Count: 0
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.AssignmentRepository sortByMark
+INFO: Sorted Assignment by mark
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Assignment items. Count: 0
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.AssignmentRepository sortNaturally
+INFO: Sorted Assignment using natural order (Comparable)
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Assignment
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Багатопоточність, Threads
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-10, 100, EXCELLENT
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Колекції, content=List, Set, Map], 2025-05-15, 80, GOOD
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Потоки вводу-виводу, content=IO Streams], 2025-05-05, 90, PASSED
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Багатопоточність, content=Threads], 2025-05-20, 85, SATISFACTORY
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-08, 75, LOW
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Assignment
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Test, Content
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Test, content=Content], 2025-06-10, 100, EXCELLENT
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Test, content=Content], 2025-06-05, 90, GOOD
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Test, content=Content], 2025-06-15, 80, PASSED
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: TES-CON-2025-06-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: TES-CON-2025-06-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: TES-CON-2025-06-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: TES-CON-2025-06-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: TES-CON-2025-06-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: TES-CON-2025-06-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Assignment items. Count: 3
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.AssignmentRepository sortByModuleAndDate
+INFO: Sorted Assignment by module and due date
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Assignment
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Багатопоточність, Threads
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-10, 100, EXCELLENT
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Колекції, content=List, Set, Map], 2025-05-15, 80, GOOD
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Потоки вводу-виводу, content=IO Streams], 2025-05-05, 90, PASSED
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Багатопоточність, content=Threads], 2025-05-20, 85, SATISFACTORY
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-08, 75, LOW
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Assignment items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.AssignmentRepository sortByModuleAndDate
+INFO: Sorted Assignment by module and due date
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Assignment
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Багатопоточність, Threads
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-10, 100, EXCELLENT
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Колекції, content=List, Set, Map], 2025-05-15, 80, GOOD
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Потоки вводу-виводу, content=IO Streams], 2025-05-05, 90, PASSED
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Багатопоточність, content=Threads], 2025-05-20, 85, SATISFACTORY
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-08, 75, LOW
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Assignment items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Assignment items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.AssignmentRepository sortByDueDate
+INFO: Sorted Assignment by due date
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Assignment items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.AssignmentRepository sortByMaxPoints
+INFO: Sorted Assignment by max points (descending)
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Assignment items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.AssignmentRepository sortByMark
+INFO: Sorted Assignment by mark
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Assignment items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Assignment
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Багатопоточність, Threads
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-10, 100, EXCELLENT
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Колекції, content=List, Set, Map], 2025-05-15, 80, GOOD
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Потоки вводу-виводу, content=IO Streams], 2025-05-05, 90, PASSED
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Багатопоточність, content=Threads], 2025-05-20, 85, SATISFACTORY
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-08, 75, LOW
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Assignment items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.AssignmentRepository sortByDueDate
+INFO: Sorted Assignment by due date
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Assignment
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Багатопоточність, Threads
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-10, 100, EXCELLENT
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Колекції, content=List, Set, Map], 2025-05-15, 80, GOOD
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Потоки вводу-виводу, content=IO Streams], 2025-05-05, 90, PASSED
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Багатопоточність, content=Threads], 2025-05-20, 85, SATISFACTORY
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-08, 75, LOW
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Assignment items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.AssignmentRepository sortByModuleTitle
+INFO: Sorted Assignment by module title using lambda
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Assignment
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Багатопоточність, Threads
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-10, 100, EXCELLENT
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Колекції, content=List, Set, Map], 2025-05-15, 80, GOOD
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Потоки вводу-виводу, content=IO Streams], 2025-05-05, 90, PASSED
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Багатопоточність, content=Threads], 2025-05-20, 85, SATISFACTORY
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-08, 75, LOW
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Assignment items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.AssignmentRepository sortByMaxPoints
+INFO: Sorted Assignment by max points (descending)
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Assignment
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Багатопоточність, Threads
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-10, 100, EXCELLENT
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Колекції, content=List, Set, Map], 2025-05-15, 80, GOOD
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Потоки вводу-виводу, content=IO Streams], 2025-05-05, 90, PASSED
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Багатопоточність, content=Threads], 2025-05-20, 85, SATISFACTORY
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-08, 75, LOW
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Assignment items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.AssignmentRepository sortByDueDateDesc
+INFO: Sorted Assignment by due date (descending)
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Assignment
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Багатопоточність, Threads
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-10, 100, EXCELLENT
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Колекції, content=List, Set, Map], 2025-05-15, 80, GOOD
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Потоки вводу-виводу, content=IO Streams], 2025-05-05, 90, PASSED
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Багатопоточність, content=Threads], 2025-05-20, 85, SATISFACTORY
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-08, 75, LOW
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Assignment
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-06-01, 85, GOOD
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Колекції, content=List, Set, Map], 2025-06-02, 85, EXCELLENT
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Потоки вводу-виводу, content=IO Streams], 2025-06-03, 90, PASSED
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-06-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-06-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: КОЛ-LIS-2025-06-02
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: КОЛ-LIS-2025-06-02
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ПОТ-IO -2025-06-03
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ПОТ-IO -2025-06-03
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Assignment items. Count: 3
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.AssignmentRepository sortByMaxPoints
+INFO: Sorted Assignment by max points (descending)
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Assignment
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Багатопоточність, Threads
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-10, 100, EXCELLENT
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Колекції, content=List, Set, Map], 2025-05-15, 80, GOOD
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Потоки вводу-виводу, content=IO Streams], 2025-05-05, 90, PASSED
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Багатопоточність, content=Threads], 2025-05-20, 85, SATISFACTORY
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-08, 75, LOW
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Assignment
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-06-01, 100, EXCELLENT
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-06-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-06-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Assignment items. Count: 1
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.AssignmentRepository sortByDueDate
+INFO: Sorted Assignment by due date
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Assignment items. Count: 1
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.AssignmentRepository sortByMaxPoints
+INFO: Sorted Assignment by max points (descending)
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Assignment
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Багатопоточність, Threads
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-10, 100, EXCELLENT
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Колекції, content=List, Set, Map], 2025-05-15, 80, GOOD
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Потоки вводу-виводу, content=IO Streams], 2025-05-05, 90, PASSED
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Багатопоточність, content=Threads], 2025-05-20, 85, SATISFACTORY
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-08, 75, LOW
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Assignment
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Test, Content
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Test, content=Content], 2025-06-01, 100, GOOD
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Test, content=Content], 2025-06-02, 90, GOOD
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Test, content=Content], 2025-06-03, 100, EXCELLENT
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: TES-CON-2025-06-02
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: TES-CON-2025-06-02
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: TES-CON-2025-06-03
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: TES-CON-2025-06-03
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: TES-CON-2025-06-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: TES-CON-2025-06-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Assignment items. Count: 3
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.AssignmentRepository sortByMarkPointsDate
+INFO: Sorted Assignment by mark, max points (desc), and due date
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Assignment
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Багатопоточність, Threads
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-10, 100, EXCELLENT
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Колекції, content=List, Set, Map], 2025-05-15, 80, GOOD
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Потоки вводу-виводу, content=IO Streams], 2025-05-05, 90, PASSED
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Багатопоточність, content=Threads], 2025-05-20, 85, SATISFACTORY
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-08, 75, LOW
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Assignment items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.AssignmentRepository sortNaturally
+INFO: Sorted Assignment using natural order (Comparable)
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Assignment
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Багатопоточність, Threads
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-10, 100, EXCELLENT
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Колекції, content=List, Set, Map], 2025-05-15, 80, GOOD
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Потоки вводу-виводу, content=IO Streams], 2025-05-05, 90, PASSED
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Багатопоточність, content=Threads], 2025-05-20, 85, SATISFACTORY
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Assignment <init>
+INFO: Assignment created successfully: myModule[title=Вступ до Java, content=Основні концепції ООП], 2025-05-08, 75, LOW
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: КОЛ-LIS-2025-05-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ПОТ-IO -2025-05-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: БАГ-THR-2025-05-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Assignment found with identity: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Assignment: ВСТ-ОСН-2025-05-08
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Assignment items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.AssignmentRepository sortByMarkPointsDate
+INFO: Sorted Assignment by mark, max points (desc), and due date
+]]></system-err>
+</testsuite>

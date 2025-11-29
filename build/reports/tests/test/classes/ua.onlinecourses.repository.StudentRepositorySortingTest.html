@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - StudentRepository Sorting Tests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>StudentRepository Sorting Tests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ua.onlinecourses.repository.html">ua.onlinecourses.repository</a> &gt; StudentRepositorySortingTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.032s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard error</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">sortByEmailLength should sort by email length</td>
+<td class="success">testSortByEmailLength()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">sortByEnrollmentDate should sort by enrollment date ascending</td>
+<td class="success">testSortByEnrollmentDate()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">sortByFirstName should sort by first name</td>
+<td class="success">testSortByFirstName()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">sortByName should sort by last name, then first name, then email</td>
+<td class="success">testSortByName()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">sortByNameDesc should sort by last name descending, then first name, then email</td>
+<td class="success">testSortByNameDesc()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">sortByName should not modify the original repository</td>
+<td class="success">testSortByNameDoesNotModifyRepository()</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">sortByName with students having same last and first name should sort by email</td>
+<td class="success">testSortByNameWithIdenticalNames()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Sorting empty repository should return empty list</td>
+<td class="success">testSortingEmptyRepository()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Sorting single student should return list with that student</td>
+<td class="success">testSortingSingleStudent()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest setUp
+INFO: Setting up test data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2025-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Maria, Smyk, maria.smyk@chnu.edu.ua, 2025-09-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alex, Kushnir, alex.kushnir@chnu.edu.ua, 2025-09-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Hatsenko, alice.hatsenko@chnu.edu.ua, 2025-09-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Anna, Hatsenko, anna.hatsenko@chnu.edu.ua, 2025-09-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: maria.smyk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: maria.smyk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alex.kushnir@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alex.kushnir@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: anna.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: anna.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest setUp
+INFO: Test setup completed with 5 students
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest testSortByName
+INFO: Testing sortByName
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Student items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepository sortByName
+INFO: Sorted Student by lastName, firstName, and email (ascending)
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest testSortByName
+INFO: sortByName test completed successfully
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest setUp
+INFO: Setting up test data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2025-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Maria, Smyk, maria.smyk@chnu.edu.ua, 2025-09-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alex, Kushnir, alex.kushnir@chnu.edu.ua, 2025-09-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Hatsenko, alice.hatsenko@chnu.edu.ua, 2025-09-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Anna, Hatsenko, anna.hatsenko@chnu.edu.ua, 2025-09-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: maria.smyk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: maria.smyk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alex.kushnir@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alex.kushnir@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: anna.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: anna.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest setUp
+INFO: Test setup completed with 5 students
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest testSortByEmailLength
+INFO: Testing sortByEmailLength
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Student items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepository sortByEmailLength
+INFO: Sorted Student by email length using lambda
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest testSortByEmailLength
+INFO: sortByEmailLength test completed successfully
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest setUp
+INFO: Setting up test data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2025-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Maria, Smyk, maria.smyk@chnu.edu.ua, 2025-09-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alex, Kushnir, alex.kushnir@chnu.edu.ua, 2025-09-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Hatsenko, alice.hatsenko@chnu.edu.ua, 2025-09-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Anna, Hatsenko, anna.hatsenko@chnu.edu.ua, 2025-09-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: maria.smyk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: maria.smyk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alex.kushnir@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alex.kushnir@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: anna.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: anna.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest setUp
+INFO: Test setup completed with 5 students
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest testSortingEmptyRepository
+INFO: Testing sorting on empty repository
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Student items. Count: 0
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepository sortByName
+INFO: Sorted Student by lastName, firstName, and email (ascending)
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Student items. Count: 0
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepository sortByNameDesc
+INFO: Sorted Student by lastName (desc), firstName, and email
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Student items. Count: 0
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepository sortByEnrollmentDate
+INFO: Sorted Student by enrollment date
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest testSortingEmptyRepository
+INFO: Empty repository sorting test completed
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest setUp
+INFO: Setting up test data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2025-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Maria, Smyk, maria.smyk@chnu.edu.ua, 2025-09-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alex, Kushnir, alex.kushnir@chnu.edu.ua, 2025-09-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Hatsenko, alice.hatsenko@chnu.edu.ua, 2025-09-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Anna, Hatsenko, anna.hatsenko@chnu.edu.ua, 2025-09-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: maria.smyk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: maria.smyk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alex.kushnir@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alex.kushnir@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: anna.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: anna.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest setUp
+INFO: Test setup completed with 5 students
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest testSortByNameWithIdenticalNames
+INFO: Testing sortByName with identical names
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Vasyl, Kosovan, vasyl.kosovan.c@chnu.edu.ua, 2023-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Vasyl, Kosovan, vasyl.kosovan.a@chnu.edu.ua, 2023-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Vasyl, Kosovan, vasyl.kosovan.b@chnu.edu.ua, 2023-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: vasyl.kosovan.c@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: vasyl.kosovan.c@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: vasyl.kosovan.a@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: vasyl.kosovan.a@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: vasyl.kosovan.b@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: vasyl.kosovan.b@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Student items. Count: 3
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepository sortByName
+INFO: Sorted Student by lastName, firstName, and email (ascending)
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest testSortByNameWithIdenticalNames
+INFO: sortByName with identical names test completed
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest setUp
+INFO: Setting up test data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2025-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Maria, Smyk, maria.smyk@chnu.edu.ua, 2025-09-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alex, Kushnir, alex.kushnir@chnu.edu.ua, 2025-09-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Hatsenko, alice.hatsenko@chnu.edu.ua, 2025-09-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Anna, Hatsenko, anna.hatsenko@chnu.edu.ua, 2025-09-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: maria.smyk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: maria.smyk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alex.kushnir@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alex.kushnir@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: anna.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: anna.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest setUp
+INFO: Test setup completed with 5 students
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest testSortByNameDesc
+INFO: Testing sortByNameDesc
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Student items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepository sortByNameDesc
+INFO: Sorted Student by lastName (desc), firstName, and email
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest testSortByNameDesc
+INFO: sortByNameDesc test completed successfully
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest setUp
+INFO: Setting up test data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2025-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Maria, Smyk, maria.smyk@chnu.edu.ua, 2025-09-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alex, Kushnir, alex.kushnir@chnu.edu.ua, 2025-09-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Hatsenko, alice.hatsenko@chnu.edu.ua, 2025-09-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Anna, Hatsenko, anna.hatsenko@chnu.edu.ua, 2025-09-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: maria.smyk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: maria.smyk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alex.kushnir@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alex.kushnir@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: anna.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: anna.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest setUp
+INFO: Test setup completed with 5 students
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest testSortingSingleStudent
+INFO: Testing sorting with single student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Student items. Count: 1
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepository sortByName
+INFO: Sorted Student by lastName, firstName, and email (ascending)
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Student items. Count: 1
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepository sortByEnrollmentDate
+INFO: Sorted Student by enrollment date
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest testSortingSingleStudent
+INFO: Single student sorting test completed
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest setUp
+INFO: Setting up test data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2025-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Maria, Smyk, maria.smyk@chnu.edu.ua, 2025-09-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alex, Kushnir, alex.kushnir@chnu.edu.ua, 2025-09-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Hatsenko, alice.hatsenko@chnu.edu.ua, 2025-09-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Anna, Hatsenko, anna.hatsenko@chnu.edu.ua, 2025-09-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: maria.smyk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: maria.smyk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alex.kushnir@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alex.kushnir@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: anna.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: anna.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest setUp
+INFO: Test setup completed with 5 students
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest testSortByNameDoesNotModifyRepository
+INFO: Testing that sortByName does not modify repository
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Student items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Student items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepository sortByName
+INFO: Sorted Student by lastName, firstName, and email (ascending)
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Student items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest setUp
+INFO: Setting up test data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2025-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Maria, Smyk, maria.smyk@chnu.edu.ua, 2025-09-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alex, Kushnir, alex.kushnir@chnu.edu.ua, 2025-09-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Hatsenko, alice.hatsenko@chnu.edu.ua, 2025-09-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Anna, Hatsenko, anna.hatsenko@chnu.edu.ua, 2025-09-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: maria.smyk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: maria.smyk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alex.kushnir@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alex.kushnir@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: anna.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: anna.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest setUp
+INFO: Test setup completed with 5 students
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest testSortByFirstName
+INFO: Testing sortByFirstName
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Student items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepository sortByFirstName
+INFO: Sorted Student by firstName using method reference
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest testSortByFirstName
+INFO: sortByFirstName test completed successfully
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest setUp
+INFO: Setting up test data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2025-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Maria, Smyk, maria.smyk@chnu.edu.ua, 2025-09-05
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alex, Kushnir, alex.kushnir@chnu.edu.ua, 2025-09-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Hatsenko, alice.hatsenko@chnu.edu.ua, 2025-09-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Anna, Hatsenko, anna.hatsenko@chnu.edu.ua, 2025-09-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: maria.smyk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: maria.smyk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alex.kushnir@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alex.kushnir@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: anna.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: anna.hatsenko@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest setUp
+INFO: Test setup completed with 5 students
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest testSortByEnrollmentDate
+INFO: Testing sortByEnrollmentDate
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Student items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepository sortByEnrollmentDate
+INFO: Sorted Student by enrollment date
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.StudentRepositorySortingTest testSortByEnrollmentDate
+INFO: sortByEnrollmentDate test completed successfully
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.14</a> at 29 нояб. 2025 г., 21:46:46</p>
+</div>
+</div>
+</body>
+</html>

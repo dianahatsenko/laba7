@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ModuleRepository Sorting Tests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ModuleRepository Sorting Tests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ua.onlinecourses.repository.html">ua.onlinecourses.repository</a> &gt; ModuleRepositorySortingTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">13</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.033s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard error</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">findByTitleContaining should work after sorting</td>
+<td class="success">testFindAfterSort()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">sortByContent should sort modules by content</td>
+<td class="success">testSortByContent()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">sortByContentLength should sort by content length</td>
+<td class="success">testSortByContentLength()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">sortByContent should handle cyrillic and latin characters</td>
+<td class="success">testSortByContentWithMixedCharacters()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">sortByTitle should sort modules by title</td>
+<td class="success">testSortByTitle()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">sortByTitleLength should sort by title length</td>
+<td class="success">testSortByTitleLength()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">sortByTitleLength with same length should sort by title</td>
+<td class="success">testSortByTitleLengthWithSameLength()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">sortByTotalLength should sort by title + content length</td>
+<td class="success">testSortByTotalLength()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">sortByTotalLength should handle modules with different lengths</td>
+<td class="success">testSortByTotalLengthVariousLengths()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">sortNaturally should use Comparable (fullName)</td>
+<td class="success">testSortNaturally()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">sorting should not modify the original repository</td>
+<td class="success">testSortingDoesNotModifyRepository()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">sorting empty repository should return empty list</td>
+<td class="success">testSortingEmptyRepository()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">sorting single module should return list with that module</td>
+<td class="success">testSortingSingleModule()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП та синтаксис мови
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams та робота з файлами
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Багатопоточність, Threads and Concurrency
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Анотації, Custom Annotations
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ВСТ-ОСН
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ВСТ-ОСН
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: КОЛ-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: КОЛ-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ПОТ-IO 
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ПОТ-IO 
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: БАГ-THR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: БАГ-THR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: АНО-CUS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: АНО-CUS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Test, Content
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: TES-CON
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: TES-CON
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Module items. Count: 1
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.ModuleRepository sortByTitle
+INFO: Sorted Module by title
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Module items. Count: 1
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.ModuleRepository sortNaturally
+INFO: Sorted Module using natural order (Comparable)
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП та синтаксис мови
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams та робота з файлами
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Багатопоточність, Threads and Concurrency
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Анотації, Custom Annotations
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ВСТ-ОСН
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ВСТ-ОСН
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: КОЛ-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: КОЛ-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ПОТ-IO 
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ПОТ-IO 
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: БАГ-THR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: БАГ-THR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: АНО-CUS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: АНО-CUS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Module items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.ModuleRepository sortByTitle
+INFO: Sorted Module by title
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Module items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.ModuleRepository findByTitleContaining
+INFO: Found 1 modules with title containing 'Java'
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП та синтаксис мови
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams та робота з файлами
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Багатопоточність, Threads and Concurrency
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Анотації, Custom Annotations
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ВСТ-ОСН
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ВСТ-ОСН
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: КОЛ-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: КОЛ-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ПОТ-IO 
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ПОТ-IO 
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: БАГ-THR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: БАГ-THR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: АНО-CUS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: АНО-CUS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: AAA, AAA
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: BBBB, BBBB
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: CCCCC, CCCCC
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: CCC-CCC
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: CCC-CCC
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: AAA-AAA
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: AAA-AAA
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: BBB-BBB
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: BBB-BBB
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Module items. Count: 3
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.ModuleRepository sortByTotalLength
+INFO: Sorted Module by total length (title + content)
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП та синтаксис мови
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams та робота з файлами
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Багатопоточність, Threads and Concurrency
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Анотації, Custom Annotations
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ВСТ-ОСН
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ВСТ-ОСН
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: КОЛ-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: КОЛ-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ПОТ-IO 
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ПОТ-IO 
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: БАГ-THR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: БАГ-THR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: АНО-CUS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: АНО-CUS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Module items. Count: 0
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.ModuleRepository sortByTitle
+INFO: Sorted Module by title
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Module items. Count: 0
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.ModuleRepository sortByContent
+INFO: Sorted Module by content
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Module items. Count: 0
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.ModuleRepository sortByContentLength
+INFO: Sorted Module by content length
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Module items. Count: 0
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.ModuleRepository sortNaturally
+INFO: Sorted Module using natural order (Comparable)
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП та синтаксис мови
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams та робота з файлами
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Багатопоточність, Threads and Concurrency
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Анотації, Custom Annotations
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ВСТ-ОСН
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ВСТ-ОСН
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: КОЛ-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: КОЛ-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ПОТ-IO 
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ПОТ-IO 
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: БАГ-THR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: БАГ-THR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: АНО-CUS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: АНО-CUS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Module items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.ModuleRepository sortByContent
+INFO: Sorted Module by content
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП та синтаксис мови
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams та робота з файлами
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Багатопоточність, Threads and Concurrency
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Анотації, Custom Annotations
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ВСТ-ОСН
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ВСТ-ОСН
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: КОЛ-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: КОЛ-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ПОТ-IO 
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ПОТ-IO 
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: БАГ-THR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: БАГ-THR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: АНО-CUS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: АНО-CUS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Module items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Module items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.ModuleRepository sortByTitle
+INFO: Sorted Module by title
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Module items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.ModuleRepository sortByContent
+INFO: Sorted Module by content
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Module items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.ModuleRepository sortByContentLength
+INFO: Sorted Module by content length
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Module items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП та синтаксис мови
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams та робота з файлами
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Багатопоточність, Threads and Concurrency
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Анотації, Custom Annotations
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ВСТ-ОСН
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ВСТ-ОСН
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: КОЛ-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: КОЛ-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ПОТ-IO 
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ПОТ-IO 
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: БАГ-THR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: БАГ-THR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: АНО-CUS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: АНО-CUS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Module items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.ModuleRepository sortByTotalLength
+INFO: Sorted Module by total length (title + content)
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП та синтаксис мови
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams та робота з файлами
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Багатопоточність, Threads and Concurrency
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Анотації, Custom Annotations
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ВСТ-ОСН
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ВСТ-ОСН
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: КОЛ-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: КОЛ-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ПОТ-IO 
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ПОТ-IO 
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: БАГ-THR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: БАГ-THR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: АНО-CUS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: АНО-CUS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Module items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.ModuleRepository sortByTitle
+INFO: Sorted Module by title
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП та синтаксис мови
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams та робота з файлами
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Багатопоточність, Threads and Concurrency
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Анотації, Custom Annotations
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ВСТ-ОСН
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ВСТ-ОСН
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: КОЛ-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: КОЛ-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ПОТ-IO 
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ПОТ-IO 
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: БАГ-THR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: БАГ-THR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: АНО-CUS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: АНО-CUS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Module items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.ModuleRepository sortNaturally
+INFO: Sorted Module using natural order (Comparable)
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП та синтаксис мови
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams та робота з файлами
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Багатопоточність, Threads and Concurrency
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Анотації, Custom Annotations
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ВСТ-ОСН
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ВСТ-ОСН
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: КОЛ-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: КОЛ-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ПОТ-IO 
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ПОТ-IO 
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: БАГ-THR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: БАГ-THR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: АНО-CUS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: АНО-CUS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Module items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.ModuleRepository sortByContentLength
+INFO: Sorted Module by content length
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП та синтаксис мови
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams та робота з файлами
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Багатопоточність, Threads and Concurrency
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Анотації, Custom Annotations
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ВСТ-ОСН
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ВСТ-ОСН
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: КОЛ-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: КОЛ-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ПОТ-IO 
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ПОТ-IO 
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: БАГ-THR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: БАГ-THR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: АНО-CUS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: АНО-CUS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: AAA, Content1
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: BBB, Content2
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: CCC, Content3
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: CCC-CON
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: CCC-CON
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: AAA-CON
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: AAA-CON
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: BBB-CON
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: BBB-CON
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Module items. Count: 3
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.ModuleRepository sortByTitleLength
+INFO: Sorted Module by title length using lambda
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП та синтаксис мови
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams та робота з файлами
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Багатопоточність, Threads and Concurrency
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Анотації, Custom Annotations
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ВСТ-ОСН
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ВСТ-ОСН
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: КОЛ-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: КОЛ-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ПОТ-IO 
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ПОТ-IO 
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: БАГ-THR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: БАГ-THR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: АНО-CUS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: АНО-CUS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Title1, ABC
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Title2, Алгоритми
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Title3, XYZ
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: TIT-АЛГ
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: TIT-АЛГ
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: TIT-XYZ
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: TIT-XYZ
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: TIT-ABC
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: TIT-ABC
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Module items. Count: 3
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.ModuleRepository sortByContent
+INFO: Sorted Module by content
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Вступ до Java, Основні концепції ООП та синтаксис мови
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Колекції, List, Set, Map
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Потоки вводу-виводу, IO Streams та робота з файлами
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Багатопоточність, Threads and Concurrency
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Анотації, Custom Annotations
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ВСТ-ОСН
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ВСТ-ОСН
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: КОЛ-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: КОЛ-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ПОТ-IO 
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ПОТ-IO 
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: БАГ-THR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: БАГ-THR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: АНО-CUS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: АНО-CUS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Module items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.ModuleRepository sortByTitleLength
+INFO: Sorted Module by title length using lambda
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.14</a> at 29 нояб. 2025 г., 21:46:46</p>
+</div>
+</div>
+</body>
+</html>

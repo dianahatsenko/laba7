@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="InstructorRepository Sorting Tests" tests="11" skipped="0" failures="0" errors="0" timestamp="2025-11-29T19:46:46.525Z" hostname="DIANACOMP" time="0.04">
+  <properties/>
+  <testcase name="findByLastName should work after sorting" classname="ua.onlinecourses.repository.InstructorRepositorySortingTest" time="0.006"/>
+  <testcase name="sortByExpertiseAndName should sort by expertise desc then name" classname="ua.onlinecourses.repository.InstructorRepositorySortingTest" time="0.004"/>
+  <testcase name="sorting empty repository should return empty list" classname="ua.onlinecourses.repository.InstructorRepositorySortingTest" time="0.004"/>
+  <testcase name="sortByExpertiseAndName should handle multiple instructors with same expertise" classname="ua.onlinecourses.repository.InstructorRepositorySortingTest" time="0.004"/>
+  <testcase name="sortByExpertise with same expertise should maintain stable order" classname="ua.onlinecourses.repository.InstructorRepositorySortingTest" time="0.003"/>
+  <testcase name="sorting should not modify the original repository" classname="ua.onlinecourses.repository.InstructorRepositorySortingTest" time="0.002"/>
+  <testcase name="sortByLastNameLength should sort by lastName length" classname="ua.onlinecourses.repository.InstructorRepositorySortingTest" time="0.003"/>
+  <testcase name="sortByLastName should sort by lastName then firstName" classname="ua.onlinecourses.repository.InstructorRepositorySortingTest" time="0.002"/>
+  <testcase name="sorting single instructor should return list with that instructor" classname="ua.onlinecourses.repository.InstructorRepositorySortingTest" time="0.003"/>
+  <testcase name="sortByFirstName should sort by firstName then lastName" classname="ua.onlinecourses.repository.InstructorRepositorySortingTest" time="0.002"/>
+  <testcase name="sortByExpertise should sort by expertise descending" classname="ua.onlinecourses.repository.InstructorRepositorySortingTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Галина, Унгурян, 26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Ігор, Булат, 34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Іван, Данилюк, 23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Анна, Шепетюк, 40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Дмитро, Плаксій, 29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ГАЛУНГ-26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ГАЛУНГ-26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ІГОБУЛ-34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ІГОБУЛ-34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ІВАДАН-23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ІВАДАН-23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: АННШЕП-40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: АННШЕП-40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ДМИПЛА-29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ДМИПЛА-29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Instructor items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.InstructorRepository sortByExpertise
+INFO: Sorted Instructor by expertise level (descending)
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Instructor items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.InstructorRepository findByLastName
+INFO: Found 1 instructors with lastName 'Булат'
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Галина, Унгурян, 26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Ігор, Булат, 34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Іван, Данилюк, 23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Анна, Шепетюк, 40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Дмитро, Плаксій, 29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ГАЛУНГ-26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ГАЛУНГ-26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ІГОБУЛ-34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ІГОБУЛ-34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ІВАДАН-23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ІВАДАН-23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: АННШЕП-40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: АННШЕП-40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ДМИПЛА-29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ДМИПЛА-29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Instructor items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.InstructorRepository sortByExpertiseAndName
+INFO: Sorted Instructor by expertise (desc) and name
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Галина, Унгурян, 26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Ігор, Булат, 34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Іван, Данилюк, 23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Анна, Шепетюк, 40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Дмитро, Плаксій, 29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ГАЛУНГ-26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ГАЛУНГ-26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ІГОБУЛ-34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ІГОБУЛ-34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ІВАДАН-23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ІВАДАН-23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: АННШЕП-40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: АННШЕП-40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ДМИПЛА-29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ДМИПЛА-29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Instructor items. Count: 0
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.InstructorRepository sortByExpertise
+INFO: Sorted Instructor by expertise level (descending)
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Instructor items. Count: 0
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.InstructorRepository sortByLastName
+INFO: Sorted Instructor by lastName and firstName
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Instructor items. Count: 0
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.InstructorRepository sortByFirstName
+INFO: Sorted Instructor by firstName and lastName
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Галина, Унгурян, 26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Ігор, Булат, 34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Іван, Данилюк, 23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Анна, Шепетюк, 40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Дмитро, Плаксій, 29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ГАЛУНГ-26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ГАЛУНГ-26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ІГОБУЛ-34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ІГОБУЛ-34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ІВАДАН-23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ІВАДАН-23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: АННШЕП-40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: АННШЕП-40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ДМИПЛА-29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ДМИПЛА-29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Олена, Карлова, 45
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Володимир, Скрипа, 45
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Денис, Онипа, 45
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ОЛЕКАР-45
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ОЛЕКАР-45
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ВОЛСКР-45
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ВОЛСКР-45
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ДЕНОНИ-45
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ДЕНОНИ-45
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Instructor items. Count: 3
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.InstructorRepository sortByExpertiseAndName
+INFO: Sorted Instructor by expertise (desc) and name
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Галина, Унгурян, 26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Ігор, Булат, 34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Іван, Данилюк, 23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Анна, Шепетюк, 40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Дмитро, Плаксій, 29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ГАЛУНГ-26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ГАЛУНГ-26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ІГОБУЛ-34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ІГОБУЛ-34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ІВАДАН-23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ІВАДАН-23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: АННШЕП-40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: АННШЕП-40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ДМИПЛА-29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ДМИПЛА-29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Тетяна, Сопронюк, 45
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Олександр, Бігун, 45
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Валерій, Дудчак, 48
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ТЕТСОП-45
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ТЕТСОП-45
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ОЛЕБІГ-45
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ОЛЕБІГ-45
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ВАЛДУД-48
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ВАЛДУД-48
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Instructor items. Count: 3
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.InstructorRepository sortByExpertise
+INFO: Sorted Instructor by expertise level (descending)
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Галина, Унгурян, 26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Ігор, Булат, 34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Іван, Данилюк, 23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Анна, Шепетюк, 40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Дмитро, Плаксій, 29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ГАЛУНГ-26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ГАЛУНГ-26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ІГОБУЛ-34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ІГОБУЛ-34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ІВАДАН-23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ІВАДАН-23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: АННШЕП-40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: АННШЕП-40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ДМИПЛА-29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ДМИПЛА-29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Instructor items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Instructor items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.InstructorRepository sortByExpertise
+INFO: Sorted Instructor by expertise level (descending)
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Instructor items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.InstructorRepository sortByLastName
+INFO: Sorted Instructor by lastName and firstName
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Instructor items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.InstructorRepository sortByFirstName
+INFO: Sorted Instructor by firstName and lastName
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Instructor items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Галина, Унгурян, 26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Ігор, Булат, 34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Іван, Данилюк, 23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Анна, Шепетюк, 40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Дмитро, Плаксій, 29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ГАЛУНГ-26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ГАЛУНГ-26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ІГОБУЛ-34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ІГОБУЛ-34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ІВАДАН-23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ІВАДАН-23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: АННШЕП-40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: АННШЕП-40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ДМИПЛА-29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ДМИПЛА-29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Instructor items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.InstructorRepository sortByLastNameLength
+INFO: Sorted Instructor by lastName length using lambda
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Галина, Унгурян, 26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Ігор, Булат, 34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Іван, Данилюк, 23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Анна, Шепетюк, 40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Дмитро, Плаксій, 29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ГАЛУНГ-26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ГАЛУНГ-26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ІГОБУЛ-34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ІГОБУЛ-34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ІВАДАН-23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ІВАДАН-23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: АННШЕП-40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: АННШЕП-40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ДМИПЛА-29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ДМИПЛА-29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Instructor items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.InstructorRepository sortByLastName
+INFO: Sorted Instructor by lastName and firstName
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Галина, Унгурян, 26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Ігор, Булат, 34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Іван, Данилюк, 23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Анна, Шепетюк, 40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Дмитро, Плаксій, 29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ГАЛУНГ-26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ГАЛУНГ-26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ІГОБУЛ-34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ІГОБУЛ-34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ІВАДАН-23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ІВАДАН-23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: АННШЕП-40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: АННШЕП-40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ДМИПЛА-29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ДМИПЛА-29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Test, Instructor, 45
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: TESINS-45
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: TESINS-45
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Instructor items. Count: 1
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.InstructorRepository sortByExpertise
+INFO: Sorted Instructor by expertise level (descending)
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Instructor items. Count: 1
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.InstructorRepository sortByLastName
+INFO: Sorted Instructor by lastName and firstName
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Галина, Унгурян, 26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Ігор, Булат, 34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Іван, Данилюк, 23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Анна, Шепетюк, 40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Дмитро, Плаксій, 29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ГАЛУНГ-26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ГАЛУНГ-26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ІГОБУЛ-34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ІГОБУЛ-34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ІВАДАН-23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ІВАДАН-23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: АННШЕП-40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: АННШЕП-40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ДМИПЛА-29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ДМИПЛА-29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Instructor items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.InstructorRepository sortByFirstName
+INFO: Sorted Instructor by firstName and lastName
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Галина, Унгурян, 26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Ігор, Булат, 34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Іван, Данилюк, 23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Анна, Шепетюк, 40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Дмитро, Плаксій, 29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ГАЛУНГ-26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ГАЛУНГ-26
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ІГОБУЛ-34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ІГОБУЛ-34
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ІВАДАН-23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ІВАДАН-23
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: АННШЕП-40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: АННШЕП-40
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: ДМИПЛА-29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: ДМИПЛА-29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Instructor items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.InstructorRepository sortByExpertise
+INFO: Sorted Instructor by expertise level (descending)
+]]></system-err>
+</testsuite>

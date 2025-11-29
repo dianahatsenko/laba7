@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - YamlDataSerializer Tests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>YamlDataSerializer Tests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ua.onlinecourses.serializer.html">ua.onlinecourses.serializer</a> &gt; YamlDataSerializerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">7</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.044s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard error</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">serialize and deserialize should preserve data integrity</td>
+<td class="success">testDataIntegrity()</td>
+<td class="success">0.016s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">deserialize should load courses from YAML file</td>
+<td class="success">testDeserialize()</td>
+<td class="success">0.009s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">deserialize from non-existent file should return empty list</td>
+<td class="success">testDeserializeNonExistentFile()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getFormat should return YAML</td>
+<td class="success">testGetFormat()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">serialize should save courses to YAML file</td>
+<td class="success">testSerialize()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">serialize empty list should create empty YAML array</td>
+<td class="success">testSerializeEmptyList()</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">serialize null list should throw exception</td>
+<td class="success">testSerializeNullList()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java, Programming, 5, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Python, Scripting, 4, 2025-02-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java, Programming, 5, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Python, Scripting, 4, 2025-02-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer deserialize
+WARNING: File does not exist: ./nonexistent.yaml. Returning empty list.
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java, Programming, 5, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Python, Scripting, 4, 2025-02-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer createParentDirectories
+INFO: Created directory: C:\Users\dinag\OneDrive\Desktop\fake\laba7\.\test_data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer serialize
+INFO: Successfully serialized 0 items to YAML file: ./test_data/courses_test.yaml
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer deserialize
+INFO: Successfully deserialized 0 items from YAML file: ./test_data/courses_test.yaml
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java, Programming, 5, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Python, Scripting, 4, 2025-02-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer createParentDirectories
+INFO: Created directory: C:\Users\dinag\OneDrive\Desktop\fake\laba7\.\test_data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer serialize
+INFO: Successfully serialized 2 items to YAML file: ./test_data/courses_test.yaml
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java, Programming, 5, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Python, Scripting, 4, 2025-02-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer createParentDirectories
+INFO: Created directory: C:\Users\dinag\OneDrive\Desktop\fake\laba7\.\test_data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer serialize
+INFO: Successfully serialized 2 items to YAML file: ./test_data/courses_test.yaml
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java, Programming, 5, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Python, Scripting, 4, 2025-02-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer deserialize
+INFO: Successfully deserialized 2 items from YAML file: ./test_data/courses_test.yaml
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java, Programming, 5, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Python, Scripting, 4, 2025-02-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer createParentDirectories
+INFO: Created directory: C:\Users\dinag\OneDrive\Desktop\fake\laba7\.\test_data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer serialize
+INFO: Successfully serialized 2 items to YAML file: ./test_data/courses_test.yaml
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java, Programming, 5, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Python, Scripting, 4, 2025-02-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer deserialize
+INFO: Successfully deserialized 2 items from YAML file: ./test_data/courses_test.yaml
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java, Programming, 5, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Python, Scripting, 4, 2025-02-01
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.14</a> at 29 нояб. 2025 г., 21:46:46</p>
+</div>
+</div>
+</body>
+</html>

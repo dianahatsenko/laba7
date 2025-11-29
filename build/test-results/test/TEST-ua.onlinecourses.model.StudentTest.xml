@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ua.onlinecourses.model.StudentTest" tests="29" skipped="0" failures="0" errors="0" timestamp="2025-11-29T19:46:45.465Z" hostname="DIANACOMP" time="0.195">
+  <properties/>
+  <testcase name="[1] " classname="ua.onlinecourses.model.StudentTest" time="0.008"/>
+  <testcase name="[2]    " classname="ua.onlinecourses.model.StudentTest" time="0.003"/>
+  <testcase name="[3] ThisNameIsWayTooLongToBeValidBecauseItExceedsFiftyCharactersLimit" classname="ua.onlinecourses.model.StudentTest" time="0.002"/>
+  <testcase name="[1] Alina, Skrypa, alina.skrypa@chnu.edu.ua, 2023-09-01, ALISKR-ALI-2023-09-01" classname="ua.onlinecourses.model.StudentTest" time="0.01"/>
+  <testcase name="[2] Diana, Hatsenko, diana.hatsenko@chnu.edu.ua, 2023-09-01, DIAHAT-DIA-2023-09-01" classname="ua.onlinecourses.model.StudentTest" time="0.004"/>
+  <testcase name="[3] Artem, Fivko, artem.fivko@chnu.edu.ua, 2023-09-01, ARTFIV-ART-2023-09-01" classname="ua.onlinecourses.model.StudentTest" time="0.004"/>
+  <testcase name="[1] Alina,Skrypa,alina.skrypa@chnu.edu.ua,2023-09-01&#10;Diana,Hatsenko,diana.hatsenko@chnu.edu.ua,2024-01-15, 2, Alina, Skrypa" classname="ua.onlinecourses.model.StudentTest" time="0.011"/>
+  <testcase name="[2] Artem,Fivko,artem.fivko@chnu.edu.ua,2022-10-20, 1, Artem, Fivko" classname="ua.onlinecourses.model.StudentTest" time="0.01"/>
+  <testcase name="[3] # Comment&#10;Maxym,Mishtak,max.mishtak@chnu.edu.ua,2023-05-10&#10;&#10;Anya,Shevchenko,anya.shevchenko@chnu.edu.ua,2024-02-01, 2, Maxym, Mishtak" classname="ua.onlinecourses.model.StudentTest" time="0.008"/>
+  <testcase name="[4] , 0, null, null" classname="ua.onlinecourses.model.StudentTest" time="0.007"/>
+  <testcase name="testGetFullNameThrowsExceptionForShortNames()" classname="ua.onlinecourses.model.StudentTest" time="0.004"/>
+  <testcase name="[1] Alina, Skrypa, alina.skrypa@chnu.edu.ua, 2023-09-01" classname="ua.onlinecourses.model.StudentTest" time="0.008"/>
+  <testcase name="[2] Diana, Hatsenko, diana.hatsenko@chnu.edu.ua, 2024-01-15" classname="ua.onlinecourses.model.StudentTest" time="0.004"/>
+  <testcase name="[3] Artem, Fivko, artem.fivko@chnu.edu.ua, 2022-10-20" classname="ua.onlinecourses.model.StudentTest" time="0.004"/>
+  <testcase name="testInvalidEnrollmentDateFuture()" classname="ua.onlinecourses.model.StudentTest" time="0.002"/>
+  <testcase name="testFileNotFound()" classname="ua.onlinecourses.model.StudentTest" time="0.004"/>
+  <testcase name="[1] " classname="ua.onlinecourses.model.StudentTest" time="0.003"/>
+  <testcase name="[2]    " classname="ua.onlinecourses.model.StudentTest" time="0.002"/>
+  <testcase name="[3] ThisLastNameIsWayTooLongToBeValidBecauseItExceedsFiftyCharactersLimit" classname="ua.onlinecourses.model.StudentTest" time="0.003"/>
+  <testcase name="[1] " classname="ua.onlinecourses.model.StudentTest" time="0.004"/>
+  <testcase name="[2]    " classname="ua.onlinecourses.model.StudentTest" time="0.003"/>
+  <testcase name="[3] notanemail" classname="ua.onlinecourses.model.StudentTest" time="0.003"/>
+  <testcase name="[4] test@" classname="ua.onlinecourses.model.StudentTest" time="0.002"/>
+  <testcase name="[5] @example.com" classname="ua.onlinecourses.model.StudentTest" time="0.003"/>
+  <testcase name="[6] test.example.com" classname="ua.onlinecourses.model.StudentTest" time="0.002"/>
+  <testcase name="testInvalidEnrollmentDateTooOld()" classname="ua.onlinecourses.model.StudentTest" time="0.002"/>
+  <testcase name="[1] John,Doe,john@test.com,2023-09-01&#10;Invalid Line&#10;Jane,Smith,jane@test.com,2024-01-15, 2" classname="ua.onlinecourses.model.StudentTest" time="0.013"/>
+  <testcase name="[2] John,Doe,notanemail,2023-09-01&#10;Jane,Smith,jane@test.com,2024-01-15, 1" classname="ua.onlinecourses.model.StudentTest" time="0.009"/>
+  <testcase name="[3] John,Doe,john@test.com,2023-09-01&#10;Jane,Smith,jane@test.com,2024-01-15, 2" classname="ua.onlinecourses.model.StudentTest" time="0.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Alina, Skrypa, alina.skrypa@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Diana, Hatsenko, diana.hatsenko@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Artem, Fivko, artem.fivko@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.StudentFileParser parseFromCSV
+INFO: Starting to parse students from file: C:\Users\dinag\AppData\Local\Temp\junit18135867236392596278\students.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Alina, Skrypa, alina.skrypa@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.StudentFileParser parseFromCSV
+INFO: Parsed student from line 1: ALISKR-ALI-2023-09-01
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Diana, Hatsenko, diana.hatsenko@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.StudentFileParser parseFromCSV
+INFO: Parsed student from line 2: DIAHAT-DIA-2024-01-15
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.StudentFileParser parseFromCSV
+INFO: Successfully parsed 2 students from file
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.StudentFileParser parseFromCSV
+INFO: Starting to parse students from file: C:\Users\dinag\AppData\Local\Temp\junit7523293384707179917\students.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Artem, Fivko, artem.fivko@chnu.edu.ua, 2022-10-20
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.StudentFileParser parseFromCSV
+INFO: Parsed student from line 1: ARTFIV-ART-2022-10-20
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.StudentFileParser parseFromCSV
+INFO: Successfully parsed 1 students from file
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.StudentFileParser parseFromCSV
+INFO: Starting to parse students from file: C:\Users\dinag\AppData\Local\Temp\junit545441343559769691\students.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Maxym, Mishtak, max.mishtak@chnu.edu.ua, 2023-05-10
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.StudentFileParser parseFromCSV
+INFO: Parsed student from line 2: MAXMIS-MAX-2023-05-10
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Anya, Shevchenko, anya.shevchenko@chnu.edu.ua, 2024-02-01
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.StudentFileParser parseFromCSV
+INFO: Parsed student from line 4: ANYSHE-ANY-2024-02-01
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.StudentFileParser parseFromCSV
+INFO: Successfully parsed 2 students from file
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.StudentFileParser parseFromCSV
+INFO: Starting to parse students from file: C:\Users\dinag\AppData\Local\Temp\junit8512112288210664150\students.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.StudentFileParser parseFromCSV
+INFO: Successfully parsed 0 students from file
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Al, Skrypa, alina.skrypa@chnu.edu.ua, 2025-11-29
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Alina, Skrypa, alina.skrypa@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Diana, Hatsenko, diana.hatsenko@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Artem, Fivko, artem.fivko@chnu.edu.ua, 2022-10-20
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.StudentFileParser parseFromCSV
+INFO: Starting to parse students from file: C:\Users\dinag\AppData\Local\Temp\junit15783230455099908710\students.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: John, Doe, john@test.com, 2023-09-01
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.StudentFileParser parseFromCSV
+INFO: Parsed student from line 1: JOHDOE-JOH-2023-09-01
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.StudentFileParser parseFromCSV
+WARNING: Failed to parse line 2: Line 2: Expected format 'firstName, lastName, email, enrollmentDate', got: Invalid Line
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Jane, Smith, jane@test.com, 2024-01-15
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.StudentFileParser parseFromCSV
+INFO: Parsed student from line 3: JANSMI-JAN-2024-01-15
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.StudentFileParser parseFromCSV
+INFO: Successfully parsed 2 students from file
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.StudentFileParser parseFromCSV
+INFO: Starting to parse students from file: C:\Users\dinag\AppData\Local\Temp\junit13050031906306656986\students.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.StudentFileParser parseFromCSV
+WARNING: Failed to parse line 1: Line 1: Invalid parameters
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Jane, Smith, jane@test.com, 2024-01-15
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.StudentFileParser parseFromCSV
+INFO: Parsed student from line 2: JANSMI-JAN-2024-01-15
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.StudentFileParser parseFromCSV
+INFO: Successfully parsed 1 students from file
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.StudentFileParser parseFromCSV
+INFO: Starting to parse students from file: C:\Users\dinag\AppData\Local\Temp\junit14236866971991857944\students.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: John, Doe, john@test.com, 2023-09-01
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.StudentFileParser parseFromCSV
+INFO: Parsed student from line 1: JOHDOE-JOH-2023-09-01
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Jane, Smith, jane@test.com, 2024-01-15
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.StudentFileParser parseFromCSV
+INFO: Parsed student from line 2: JANSMI-JAN-2024-01-15
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.StudentFileParser parseFromCSV
+INFO: Successfully parsed 2 students from file
+]]></system-err>
+</testsuite>

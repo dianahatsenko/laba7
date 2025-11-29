@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - PersistenceManager Tests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>PersistenceManager Tests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ua.onlinecourses.persistence.html">ua.onlinecourses.persistence</a> &gt; PersistenceManagerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">13</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.369s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard error</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">load and save should preserve data</td>
+<td class="success">testDataPreservation()</td>
+<td class="success">0.019s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getSupportedFormats should return array with JSON and YAML</td>
+<td class="success">testGetSupportedFormats()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">isFormatSupported should return true for JSON</td>
+<td class="success">testIsFormatSupportedJson()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">isFormatSupported should return false for XML</td>
+<td class="success">testIsFormatSupportedXml()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">isFormatSupported should return true for YAML</td>
+<td class="success">testIsFormatSupportedYaml()</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">load should load data from JSON format</td>
+<td class="success">testLoadJson()</td>
+<td class="success">0.236s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">load should load data from YAML format</td>
+<td class="success">testLoadYaml()</td>
+<td class="success">0.045s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">saveAllFormats should save data in both formats</td>
+<td class="success">testSaveAllFormats()</td>
+<td class="success">0.013s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">save should save data in JSON format</td>
+<td class="success">testSaveJson()</td>
+<td class="success">0.013s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">save with null entity type should throw exception</td>
+<td class="success">testSaveNullEntityType()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">save with null items should throw exception</td>
+<td class="success">testSaveNullItems()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">save with unsupported format should throw exception</td>
+<td class="success">testSaveUnsupportedFormat()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">save should save data in YAML format</td>
+<td class="success">testSaveYaml()</td>
+<td class="success">0.012s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>нояб. 29, 2025 9:46:45 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.persistence.PersistenceManager &lt;init&gt;
+INFO: PersistenceManager initialized with 2 serializers
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Igor, Bylat, 18
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Denys, Skrypa, 22
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.persistence.PersistenceManager save
+INFO: Saving 2 items of type instructors to JSON file: .\data\instructors.json
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.serializer.AbstractDataSerializer serialize
+INFO: Successfully serialized 2 items to JSON file: .\data\instructors.json
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.persistence.PersistenceManager save
+INFO: Successfully saved 2 instructors items to JSON
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.persistence.PersistenceManager load
+INFO: Loading instructors from JSON file: .\data\instructors.json
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Igor, Bylat, 18
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Denys, Skrypa, 22
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer deserialize
+INFO: Successfully deserialized 2 items from JSON file: .\data\instructors.json
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager load
+INFO: Successfully loaded 2 items of type instructors
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager &lt;init&gt;
+INFO: PersistenceManager initialized with 2 serializers
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Igor, Bylat, 18
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Denys, Skrypa, 22
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager save
+INFO: Saving 2 items of type instructors to YAML file: .\data\instructors.yaml
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer createParentDirectories
+INFO: Created directory: C:\Users\dinag\OneDrive\Desktop\fake\laba7\.\data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer serialize
+INFO: Successfully serialized 2 items to YAML file: .\data\instructors.yaml
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager save
+INFO: Successfully saved 2 instructors items to YAML
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager load
+INFO: Loading instructors from YAML file: .\data\instructors.yaml
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Igor, Bylat, 18
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Denys, Skrypa, 22
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer deserialize
+INFO: Successfully deserialized 2 items from YAML file: .\data\instructors.yaml
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager load
+INFO: Successfully loaded 2 items of type instructors
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager &lt;init&gt;
+INFO: PersistenceManager initialized with 2 serializers
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Igor, Bylat, 18
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Denys, Skrypa, 22
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager save
+INFO: Saving 2 items of type instructors to JSON file: .\data\instructors.json
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer createParentDirectories
+INFO: Created directory: C:\Users\dinag\OneDrive\Desktop\fake\laba7\.\data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer serialize
+INFO: Successfully serialized 2 items to JSON file: .\data\instructors.json
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager save
+INFO: Successfully saved 2 instructors items to JSON
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager load
+INFO: Loading instructors from JSON file: .\data\instructors.json
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Igor, Bylat, 18
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Denys, Skrypa, 22
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer deserialize
+INFO: Successfully deserialized 2 items from JSON file: .\data\instructors.json
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager load
+INFO: Successfully loaded 2 items of type instructors
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager &lt;init&gt;
+INFO: PersistenceManager initialized with 2 serializers
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Igor, Bylat, 18
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Denys, Skrypa, 22
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager save
+INFO: Saving 2 items of type instructors to JSON file: .\data\instructors.json
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer createParentDirectories
+INFO: Created directory: C:\Users\dinag\OneDrive\Desktop\fake\laba7\.\data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer serialize
+INFO: Successfully serialized 2 items to JSON file: .\data\instructors.json
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager save
+INFO: Successfully saved 2 instructors items to JSON
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager &lt;init&gt;
+INFO: PersistenceManager initialized with 2 serializers
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Igor, Bylat, 18
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Denys, Skrypa, 22
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager save
+INFO: Saving 2 items of type instructors to YAML file: .\data\instructors.yaml
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer createParentDirectories
+INFO: Created directory: C:\Users\dinag\OneDrive\Desktop\fake\laba7\.\data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer serialize
+INFO: Successfully serialized 2 items to YAML file: .\data\instructors.yaml
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager save
+INFO: Successfully saved 2 instructors items to YAML
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager &lt;init&gt;
+INFO: PersistenceManager initialized with 2 serializers
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Igor, Bylat, 18
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Denys, Skrypa, 22
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager &lt;init&gt;
+INFO: PersistenceManager initialized with 2 serializers
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Igor, Bylat, 18
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Denys, Skrypa, 22
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager &lt;init&gt;
+INFO: PersistenceManager initialized with 2 serializers
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Igor, Bylat, 18
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Denys, Skrypa, 22
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager &lt;init&gt;
+INFO: PersistenceManager initialized with 2 serializers
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Igor, Bylat, 18
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Denys, Skrypa, 22
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager &lt;init&gt;
+INFO: PersistenceManager initialized with 2 serializers
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Igor, Bylat, 18
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Denys, Skrypa, 22
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager &lt;init&gt;
+INFO: PersistenceManager initialized with 2 serializers
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Igor, Bylat, 18
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Denys, Skrypa, 22
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager &lt;init&gt;
+INFO: PersistenceManager initialized with 2 serializers
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Igor, Bylat, 18
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Denys, Skrypa, 22
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager saveAllFormats
+INFO: Saving 2 items of type instructors to all formats
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager save
+INFO: Saving 2 items of type instructors to JSON file: .\data\instructors.json
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer createParentDirectories
+INFO: Created directory: C:\Users\dinag\OneDrive\Desktop\fake\laba7\.\data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer serialize
+INFO: Successfully serialized 2 items to JSON file: .\data\instructors.json
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager save
+INFO: Successfully saved 2 instructors items to JSON
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager save
+INFO: Saving 2 items of type instructors to YAML file: .\data\instructors.yaml
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer serialize
+INFO: Successfully serialized 2 items to YAML file: .\data\instructors.yaml
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager save
+INFO: Successfully saved 2 instructors items to YAML
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager saveAllFormats
+INFO: Successfully saved instructors to all formats
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager &lt;init&gt;
+INFO: PersistenceManager initialized with 2 serializers
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Igor, Bylat, 18
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Denys, Skrypa, 22
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.persistence.PersistenceManager getSerializer
+SEVERE: Unsupported format: XML. Available formats: [JSON, YAML]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.14</a> at 29 нояб. 2025 г., 21:46:46</p>
+</div>
+</div>
+</body>
+</html>

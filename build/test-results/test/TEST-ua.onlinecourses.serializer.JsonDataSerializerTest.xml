@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JsonDataSerializer Tests" tests="9" skipped="0" failures="0" errors="0" timestamp="2025-11-29T19:46:46.649Z" hostname="DIANACOMP" time="0.051">
+  <properties/>
+  <testcase name="serialize null list should throw exception" classname="ua.onlinecourses.serializer.JsonDataSerializerTest" time="0.003"/>
+  <testcase name="deserialize from non-existent file should return empty list" classname="ua.onlinecourses.serializer.JsonDataSerializerTest" time="0.002"/>
+  <testcase name="serialize empty list should create empty JSON array" classname="ua.onlinecourses.serializer.JsonDataSerializerTest" time="0.008"/>
+  <testcase name="serialize should save students to JSON file" classname="ua.onlinecourses.serializer.JsonDataSerializerTest" time="0.008"/>
+  <testcase name="deserialize with null class should throw exception" classname="ua.onlinecourses.serializer.JsonDataSerializerTest" time="0.003"/>
+  <testcase name="serialize and deserialize should preserve data integrity" classname="ua.onlinecourses.serializer.JsonDataSerializerTest" time="0.01"/>
+  <testcase name="deserialize should load students from JSON file" classname="ua.onlinecourses.serializer.JsonDataSerializerTest" time="0.01"/>
+  <testcase name="getFormat should return JSON" classname="ua.onlinecourses.serializer.JsonDataSerializerTest" time="0.001"/>
+  <testcase name="serialize with null file path should throw exception" classname="ua.onlinecourses.serializer.JsonDataSerializerTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Lesia, Melnyk, lesia.melnyk@chnu.edu.ua, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Liliya, Fivko, liliya.fivko@student.ua, 2025-01-02
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Lesia, Melnyk, lesia.melnyk@chnu.edu.ua, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Liliya, Fivko, liliya.fivko@student.ua, 2025-01-02
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer deserialize
+WARNING: File does not exist: ./nonexistent.json. Returning empty list.
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Lesia, Melnyk, lesia.melnyk@chnu.edu.ua, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Liliya, Fivko, liliya.fivko@student.ua, 2025-01-02
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer createParentDirectories
+INFO: Created directory: C:\Users\dinag\OneDrive\Desktop\fake\laba7\.\test_data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer serialize
+INFO: Successfully serialized 0 items to JSON file: ./test_data/students_test.json
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer deserialize
+INFO: Successfully deserialized 0 items from JSON file: ./test_data/students_test.json
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Lesia, Melnyk, lesia.melnyk@chnu.edu.ua, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Liliya, Fivko, liliya.fivko@student.ua, 2025-01-02
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer createParentDirectories
+INFO: Created directory: C:\Users\dinag\OneDrive\Desktop\fake\laba7\.\test_data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer serialize
+INFO: Successfully serialized 2 items to JSON file: ./test_data/students_test.json
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Lesia, Melnyk, lesia.melnyk@chnu.edu.ua, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Liliya, Fivko, liliya.fivko@student.ua, 2025-01-02
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Lesia, Melnyk, lesia.melnyk@chnu.edu.ua, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Liliya, Fivko, liliya.fivko@student.ua, 2025-01-02
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer createParentDirectories
+INFO: Created directory: C:\Users\dinag\OneDrive\Desktop\fake\laba7\.\test_data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer serialize
+INFO: Successfully serialized 2 items to JSON file: ./test_data/students_test.json
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Lesia, Melnyk, lesia.melnyk@chnu.edu.ua, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Liliya, Fivko, liliya.fivko@student.ua, 2025-01-02
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer deserialize
+INFO: Successfully deserialized 2 items from JSON file: ./test_data/students_test.json
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Lesia, Melnyk, lesia.melnyk@chnu.edu.ua, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Liliya, Fivko, liliya.fivko@student.ua, 2025-01-02
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer createParentDirectories
+INFO: Created directory: C:\Users\dinag\OneDrive\Desktop\fake\laba7\.\test_data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer serialize
+INFO: Successfully serialized 2 items to JSON file: ./test_data/students_test.json
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Lesia, Melnyk, lesia.melnyk@chnu.edu.ua, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Liliya, Fivko, liliya.fivko@student.ua, 2025-01-02
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer deserialize
+INFO: Successfully deserialized 2 items from JSON file: ./test_data/students_test.json
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Lesia, Melnyk, lesia.melnyk@chnu.edu.ua, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Liliya, Fivko, liliya.fivko@student.ua, 2025-01-02
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Lesia, Melnyk, lesia.melnyk@chnu.edu.ua, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student <init>
+INFO: Student created successfully: Liliya, Fivko, liliya.fivko@student.ua, 2025-01-02
+]]></system-err>
+</testsuite>

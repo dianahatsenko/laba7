@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="YamlDataSerializer Tests" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-11-29T19:46:46.701Z" hostname="DIANACOMP" time="0.045">
+  <properties/>
+  <testcase name="serialize null list should throw exception" classname="ua.onlinecourses.serializer.YamlDataSerializerTest" time="0.002"/>
+  <testcase name="deserialize from non-existent file should return empty list" classname="ua.onlinecourses.serializer.YamlDataSerializerTest" time="0.002"/>
+  <testcase name="serialize empty list should create empty YAML array" classname="ua.onlinecourses.serializer.YamlDataSerializerTest" time="0.007"/>
+  <testcase name="serialize should save courses to YAML file" classname="ua.onlinecourses.serializer.YamlDataSerializerTest" time="0.006"/>
+  <testcase name="serialize and deserialize should preserve data integrity" classname="ua.onlinecourses.serializer.YamlDataSerializerTest" time="0.016"/>
+  <testcase name="deserialize should load courses from YAML file" classname="ua.onlinecourses.serializer.YamlDataSerializerTest" time="0.009"/>
+  <testcase name="getFormat should return YAML" classname="ua.onlinecourses.serializer.YamlDataSerializerTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Java, Programming, 5, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Python, Scripting, 4, 2025-02-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Java, Programming, 5, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Python, Scripting, 4, 2025-02-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer deserialize
+WARNING: File does not exist: ./nonexistent.yaml. Returning empty list.
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Java, Programming, 5, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Python, Scripting, 4, 2025-02-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer createParentDirectories
+INFO: Created directory: C:\Users\dinag\OneDrive\Desktop\fake\laba7\.\test_data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer serialize
+INFO: Successfully serialized 0 items to YAML file: ./test_data/courses_test.yaml
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer deserialize
+INFO: Successfully deserialized 0 items from YAML file: ./test_data/courses_test.yaml
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Java, Programming, 5, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Python, Scripting, 4, 2025-02-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer createParentDirectories
+INFO: Created directory: C:\Users\dinag\OneDrive\Desktop\fake\laba7\.\test_data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer serialize
+INFO: Successfully serialized 2 items to YAML file: ./test_data/courses_test.yaml
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Java, Programming, 5, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Python, Scripting, 4, 2025-02-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer createParentDirectories
+INFO: Created directory: C:\Users\dinag\OneDrive\Desktop\fake\laba7\.\test_data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer serialize
+INFO: Successfully serialized 2 items to YAML file: ./test_data/courses_test.yaml
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Java, Programming, 5, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Python, Scripting, 4, 2025-02-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer deserialize
+INFO: Successfully deserialized 2 items from YAML file: ./test_data/courses_test.yaml
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Java, Programming, 5, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Python, Scripting, 4, 2025-02-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer createParentDirectories
+INFO: Created directory: C:\Users\dinag\OneDrive\Desktop\fake\laba7\.\test_data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer serialize
+INFO: Successfully serialized 2 items to YAML file: ./test_data/courses_test.yaml
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Java, Programming, 5, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Python, Scripting, 4, 2025-02-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer deserialize
+INFO: Successfully deserialized 2 items from YAML file: ./test_data/courses_test.yaml
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Java, Programming, 5, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Python, Scripting, 4, 2025-02-01
+]]></system-err>
+</testsuite>

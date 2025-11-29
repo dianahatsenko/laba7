@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="GenericRepository sortByIdentity Tests" tests="10" skipped="0" failures="0" errors="0" timestamp="2025-11-29T19:46:46.319Z" hostname="DIANACOMP" time="0.037">
+  <properties/>
+  <testcase name="sortByIdentity on empty repository should return empty list" classname="ua.onlinecourses.repository.GenericRepositorySortingTest" time="0.006"/>
+  <testcase name="sortByIdentity with null order should default to 'asc'" classname="ua.onlinecourses.repository.GenericRepositorySortingTest" time="0.004"/>
+  <testcase name="sortByIdentity should be case-insensitive for order parameter" classname="ua.onlinecourses.repository.GenericRepositorySortingTest" time="0.005"/>
+  <testcase name="sortByIdentity should not modify the original repository" classname="ua.onlinecourses.repository.GenericRepositorySortingTest" time="0.003"/>
+  <testcase name="sortByIdentity with invalid order should default to 'asc'" classname="ua.onlinecourses.repository.GenericRepositorySortingTest" time="0.002"/>
+  <testcase name="sortByIdentity with single element should return list with that element" classname="ua.onlinecourses.repository.GenericRepositorySortingTest" time="0.004"/>
+  <testcase name="sortByIdentity with duplicate identities should maintain stability" classname="ua.onlinecourses.repository.GenericRepositorySortingTest" time="0.004"/>
+  <testcase name="sortByIdentity with 'desc' should sort in descending order" classname="ua.onlinecourses.repository.GenericRepositorySortingTest" time="0.003"/>
+  <testcase name="sortByIdentity should return reverse order for asc and desc" classname="ua.onlinecourses.repository.GenericRepositorySortingTest" time="0.002"/>
+  <testcase name="sortByIdentity with 'asc' should sort in ascending order" classname="ua.onlinecourses.repository.GenericRepositorySortingTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest setUp
+INFO: Setting up test data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Advanced Topics, Complex algorithms
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Data Structures, Lists and trees
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Algorithms, Sorting methods
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Testing, Unit tests
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: INT-BAS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: INT-BAS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ADV-COM
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ADV-COM
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: DAT-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: DAT-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ALG-SOR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ALG-SOR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: TES-UNI
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: TES-UNI
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest setUp
+INFO: Test setup completed with 5 modules
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest testSortByIdentityEmptyRepository
+INFO: Testing sortByIdentity on empty repository
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository sortByIdentity
+INFO: Sorted Module items by identity in asc order
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository sortByIdentity
+INFO: Sorted Module items by identity in desc order
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest testSortByIdentityEmptyRepository
+INFO: Empty repository test completed successfully
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest setUp
+INFO: Setting up test data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Advanced Topics, Complex algorithms
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Data Structures, Lists and trees
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Algorithms, Sorting methods
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Testing, Unit tests
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: INT-BAS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: INT-BAS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ADV-COM
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ADV-COM
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: DAT-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: DAT-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ALG-SOR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ALG-SOR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: TES-UNI
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: TES-UNI
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest setUp
+INFO: Test setup completed with 5 modules
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest testSortByIdentityNullOrder
+INFO: Testing sortByIdentity with null order
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository sortByIdentity
+WARNING: Invalid sort order: null. Using asc by default
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository sortByIdentity
+INFO: Sorted Module items by identity in asc order
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository sortByIdentity
+INFO: Sorted Module items by identity in asc order
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest testSortByIdentityNullOrder
+INFO: Null order test completed successfully
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest setUp
+INFO: Setting up test data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Advanced Topics, Complex algorithms
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Data Structures, Lists and trees
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Algorithms, Sorting methods
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Testing, Unit tests
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: INT-BAS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: INT-BAS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ADV-COM
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ADV-COM
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: DAT-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: DAT-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ALG-SOR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ALG-SOR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: TES-UNI
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: TES-UNI
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest setUp
+INFO: Test setup completed with 5 modules
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest testSortByIdentityCaseInsensitive
+INFO: Testing sortByIdentity case insensitivity
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository sortByIdentity
+INFO: Sorted Module items by identity in asc order
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository sortByIdentity
+INFO: Sorted Module items by identity in ASC order
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository sortByIdentity
+INFO: Sorted Module items by identity in Asc order
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository sortByIdentity
+INFO: Sorted Module items by identity in desc order
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository sortByIdentity
+INFO: Sorted Module items by identity in DESC order
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository sortByIdentity
+INFO: Sorted Module items by identity in Desc order
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest testSortByIdentityCaseInsensitive
+INFO: Case insensitivity test completed successfully
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest setUp
+INFO: Setting up test data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Advanced Topics, Complex algorithms
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Data Structures, Lists and trees
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Algorithms, Sorting methods
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Testing, Unit tests
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: INT-BAS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: INT-BAS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ADV-COM
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ADV-COM
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: DAT-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: DAT-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ALG-SOR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ALG-SOR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: TES-UNI
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: TES-UNI
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest setUp
+INFO: Test setup completed with 5 modules
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest testSortByIdentityDoesNotModifyRepository
+INFO: Testing that sortByIdentity does not modify repository
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Module items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository sortByIdentity
+INFO: Sorted Module items by identity in asc order
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository sortByIdentity
+INFO: Sorted Module items by identity in desc order
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Module items. Count: 5
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest testSortByIdentityDoesNotModifyRepository
+INFO: Repository immutability test completed successfully
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest setUp
+INFO: Setting up test data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Advanced Topics, Complex algorithms
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Data Structures, Lists and trees
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Algorithms, Sorting methods
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Testing, Unit tests
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: INT-BAS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: INT-BAS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ADV-COM
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ADV-COM
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: DAT-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: DAT-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ALG-SOR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ALG-SOR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: TES-UNI
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: TES-UNI
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest setUp
+INFO: Test setup completed with 5 modules
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest testSortByIdentityInvalidOrder
+INFO: Testing sortByIdentity with invalid order
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository sortByIdentity
+WARNING: Invalid sort order: invalid. Using asc by default
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository sortByIdentity
+INFO: Sorted Module items by identity in asc order
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository sortByIdentity
+INFO: Sorted Module items by identity in asc order
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest testSortByIdentityInvalidOrder
+INFO: Invalid order test completed successfully
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest setUp
+INFO: Setting up test data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Advanced Topics, Complex algorithms
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Data Structures, Lists and trees
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Algorithms, Sorting methods
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Testing, Unit tests
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: INT-BAS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: INT-BAS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ADV-COM
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ADV-COM
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: DAT-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: DAT-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ALG-SOR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ALG-SOR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: TES-UNI
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: TES-UNI
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest setUp
+INFO: Test setup completed with 5 modules
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest testSortByIdentitySingleElement
+INFO: Testing sortByIdentity with single element
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Single, Content
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: SIN-CON
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: SIN-CON
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository sortByIdentity
+INFO: Sorted Module items by identity in asc order
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository sortByIdentity
+INFO: Sorted Module items by identity in desc order
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest testSortByIdentitySingleElement
+INFO: Single element test completed successfully
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest setUp
+INFO: Setting up test data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Advanced Topics, Complex algorithms
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Data Structures, Lists and trees
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Algorithms, Sorting methods
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Testing, Unit tests
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: INT-BAS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: INT-BAS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ADV-COM
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ADV-COM
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: DAT-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: DAT-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ALG-SOR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ALG-SOR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: TES-UNI
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: TES-UNI
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest setUp
+INFO: Test setup completed with 5 modules
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest testSortByIdentityWithDuplicates
+INFO: Testing sortByIdentity with modules having same identity prefix
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: AAA, First
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: AAA, Second
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: BBB, Third
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: AAA-FIR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: AAA-FIR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: AAA-SEC
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: AAA-SEC
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: BBB-THI
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: BBB-THI
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository sortByIdentity
+INFO: Sorted Module items by identity in asc order
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest testSortByIdentityWithDuplicates
+INFO: Duplicate identities test completed successfully
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest setUp
+INFO: Setting up test data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Advanced Topics, Complex algorithms
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Data Structures, Lists and trees
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Algorithms, Sorting methods
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Testing, Unit tests
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: INT-BAS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: INT-BAS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ADV-COM
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ADV-COM
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: DAT-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: DAT-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ALG-SOR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ALG-SOR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: TES-UNI
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: TES-UNI
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest setUp
+INFO: Test setup completed with 5 modules
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest testSortByIdentityDescending
+INFO: Testing sortByIdentity descending
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository sortByIdentity
+INFO: Sorted Module items by identity in desc order
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest testSortByIdentityDescending
+INFO: sortByIdentity descending test completed successfully
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest setUp
+INFO: Setting up test data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Advanced Topics, Complex algorithms
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Data Structures, Lists and trees
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Algorithms, Sorting methods
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Testing, Unit tests
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: INT-BAS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: INT-BAS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ADV-COM
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ADV-COM
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: DAT-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: DAT-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ALG-SOR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ALG-SOR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: TES-UNI
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: TES-UNI
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest setUp
+INFO: Test setup completed with 5 modules
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest testSortByIdentityAscDescReverse
+INFO: Testing that asc and desc are reverse of each other
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository sortByIdentity
+INFO: Sorted Module items by identity in asc order
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository sortByIdentity
+INFO: Sorted Module items by identity in desc order
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest testSortByIdentityAscDescReverse
+INFO: Asc/Desc reverse test completed successfully
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest setUp
+INFO: Setting up test data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository <init>
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Advanced Topics, Complex algorithms
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Data Structures, Lists and trees
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Algorithms, Sorting methods
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Testing, Unit tests
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: INT-BAS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: INT-BAS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ADV-COM
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ADV-COM
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: DAT-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: DAT-LIS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ALG-SOR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ALG-SOR
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: TES-UNI
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: TES-UNI
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest setUp
+INFO: Test setup completed with 5 modules
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest testSortByIdentityAscending
+INFO: Testing sortByIdentity ascending
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository sortByIdentity
+INFO: Sorted Module items by identity in asc order
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepositorySortingTest testSortByIdentityAscending
+INFO: sortByIdentity ascending test completed successfully
+]]></system-err>
+</testsuite>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - JsonDataSerializer Tests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>JsonDataSerializer Tests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ua.onlinecourses.serializer.html">ua.onlinecourses.serializer</a> &gt; JsonDataSerializerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.046s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard error</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">serialize and deserialize should preserve data integrity</td>
+<td class="success">testDataIntegrity()</td>
+<td class="success">0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">deserialize should load students from JSON file</td>
+<td class="success">testDeserialize()</td>
+<td class="success">0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">deserialize from non-existent file should return empty list</td>
+<td class="success">testDeserializeNonExistentFile()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">deserialize with null class should throw exception</td>
+<td class="success">testDeserializeNullClass()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getFormat should return JSON</td>
+<td class="success">testGetFormat()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">serialize should save students to JSON file</td>
+<td class="success">testSerialize()</td>
+<td class="success">0.008s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">serialize empty list should create empty JSON array</td>
+<td class="success">testSerializeEmptyList()</td>
+<td class="success">0.008s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">serialize with null file path should throw exception</td>
+<td class="success">testSerializeNullFilePath()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">serialize null list should throw exception</td>
+<td class="success">testSerializeNullList()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Lesia, Melnyk, lesia.melnyk@chnu.edu.ua, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Liliya, Fivko, liliya.fivko@student.ua, 2025-01-02
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Lesia, Melnyk, lesia.melnyk@chnu.edu.ua, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Liliya, Fivko, liliya.fivko@student.ua, 2025-01-02
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer deserialize
+WARNING: File does not exist: ./nonexistent.json. Returning empty list.
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Lesia, Melnyk, lesia.melnyk@chnu.edu.ua, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Liliya, Fivko, liliya.fivko@student.ua, 2025-01-02
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer createParentDirectories
+INFO: Created directory: C:\Users\dinag\OneDrive\Desktop\fake\laba7\.\test_data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer serialize
+INFO: Successfully serialized 0 items to JSON file: ./test_data/students_test.json
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer deserialize
+INFO: Successfully deserialized 0 items from JSON file: ./test_data/students_test.json
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Lesia, Melnyk, lesia.melnyk@chnu.edu.ua, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Liliya, Fivko, liliya.fivko@student.ua, 2025-01-02
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer createParentDirectories
+INFO: Created directory: C:\Users\dinag\OneDrive\Desktop\fake\laba7\.\test_data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer serialize
+INFO: Successfully serialized 2 items to JSON file: ./test_data/students_test.json
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Lesia, Melnyk, lesia.melnyk@chnu.edu.ua, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Liliya, Fivko, liliya.fivko@student.ua, 2025-01-02
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Lesia, Melnyk, lesia.melnyk@chnu.edu.ua, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Liliya, Fivko, liliya.fivko@student.ua, 2025-01-02
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer createParentDirectories
+INFO: Created directory: C:\Users\dinag\OneDrive\Desktop\fake\laba7\.\test_data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer serialize
+INFO: Successfully serialized 2 items to JSON file: ./test_data/students_test.json
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Lesia, Melnyk, lesia.melnyk@chnu.edu.ua, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Liliya, Fivko, liliya.fivko@student.ua, 2025-01-02
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer deserialize
+INFO: Successfully deserialized 2 items from JSON file: ./test_data/students_test.json
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Lesia, Melnyk, lesia.melnyk@chnu.edu.ua, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Liliya, Fivko, liliya.fivko@student.ua, 2025-01-02
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer createParentDirectories
+INFO: Created directory: C:\Users\dinag\OneDrive\Desktop\fake\laba7\.\test_data
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer serialize
+INFO: Successfully serialized 2 items to JSON file: ./test_data/students_test.json
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Lesia, Melnyk, lesia.melnyk@chnu.edu.ua, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Liliya, Fivko, liliya.fivko@student.ua, 2025-01-02
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.serializer.AbstractDataSerializer deserialize
+INFO: Successfully deserialized 2 items from JSON file: ./test_data/students_test.json
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Lesia, Melnyk, lesia.melnyk@chnu.edu.ua, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Liliya, Fivko, liliya.fivko@student.ua, 2025-01-02
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Lesia, Melnyk, lesia.melnyk@chnu.edu.ua, 2025-01-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Liliya, Fivko, liliya.fivko@student.ua, 2025-01-02
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.14</a> at 29 нояб. 2025 г., 21:46:46</p>
+</div>
+</div>
+</body>
+</html>

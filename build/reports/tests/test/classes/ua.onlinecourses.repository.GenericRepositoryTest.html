@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Generic Repository Tests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Generic Repository Tests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ua.onlinecourses.repository.html">ua.onlinecourses.repository</a> &gt; GenericRepositoryTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">37</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.111s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard error</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Test adding duplicate course</td>
+<td class="success">testAddDuplicateCourse()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test adding duplicate student</td>
+<td class="success">testAddDuplicateStudent()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test adding multiple students</td>
+<td class="success">testAddMultipleStudents()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test adding null student</td>
+<td class="success">testAddNullStudent()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test adding valid course</td>
+<td class="success">testAddValidCourse()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test adding valid student</td>
+<td class="success">testAddValidStudent()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test clear empty repository</td>
+<td class="success">testClearEmptyRepository()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test clear repository</td>
+<td class="success">testClearRepository()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test complete workflow: add, find, remove</td>
+<td class="success">testCompleteWorkflow()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test containsIdentity for existing item</td>
+<td class="success">testContainsIdentityExisting()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test containsIdentity for non-existing item</td>
+<td class="success">testContainsIdentityNonExisting()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test contains method</td>
+<td class="success">testContainsMethod()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test repository with custom identity extractor</td>
+<td class="success">testCustomIdentityExtractor()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[1] Student, Student[firstName=Dina, lastName=Krasova, email=dina.krasova@chnu.edu.ua, enrollmentDate=2025-11-29], dina.krasova@chnu.edu.ua</td>
+<td class="success">testDifferentEntityTypes(String, Object, String)[1]</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[2] Course, Course[title=Physical education, description=Sports activity, credits=3, startDate=2025-12-29], PHY-SPO-32025-12-29</td>
+<td class="success">testDifferentEntityTypes(String, Object, String)[2]</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[3] Instructor, Instructor[firstName=Natalia, lastName=Marinova, expertise=10], NATMARI-10</td>
+<td class="success">testDifferentEntityTypes(String, Object, String)[3]</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test finding existing student by identity</td>
+<td class="success">testFindExistingStudent()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[1] yuriy.vasuluk@chnu.edu.ua</td>
+<td class="success">testFindMultipleStudentsByEmail(String)[1]</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[2] alice.rotar@chnu.edu.ua</td>
+<td class="success">testFindMultipleStudentsByEmail(String)[2]</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[3] mariya.shevchuk@chnu.edu.ua</td>
+<td class="success">testFindMultipleStudentsByEmail(String)[3]</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test finding non-existing student</td>
+<td class="success">testFindNonExistingStudent()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test finding with null identity</td>
+<td class="success">testFindWithNullIdentity()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test getAll from empty repository</td>
+<td class="success">testGetAllEmpty()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test getAll with multiple items</td>
+<td class="success">testGetAllMultipleItems()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test getAll returns defensive copy</td>
+<td class="success">testGetAllReturnsDefensiveCopy()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test isEmpty on non-empty repository</td>
+<td class="success">testIsEmptyFalse()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test isEmpty on empty repository</td>
+<td class="success">testIsEmptyTrue()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test multiple repositories independence</td>
+<td class="success">testMultipleRepositoriesIndependence()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test removing from empty repository</td>
+<td class="success">testRemoveFromEmptyRepository()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test removing non-existing student</td>
+<td class="success">testRemoveNonExistingStudent()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test removing null object</td>
+<td class="success">testRemoveNullObject()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test removing student by identity</td>
+<td class="success">testRemoveStudentByIdentity()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test removing student by object</td>
+<td class="success">testRemoveStudentByObject()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test removing with null identity</td>
+<td class="success">testRemoveWithNullIdentity()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test repository after clear</td>
+<td class="success">testRepositoryAfterClear()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test size after adding items</td>
+<td class="success">testSizeAfterAdding()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test size of empty repository</td>
+<td class="success">testSizeEmpty()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository removeByIdentity
+WARNING: No Student found with identity: any@test.com to remove
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Course found with identity: JAV-LEA-52025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Course: JAV-LEA-52025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: HALMEL-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: HALMEL-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository clear
+INFO: Cleared repository. Removed 1 Student items
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Course found with identity: JAV-LEA-52025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Course: JAV-LEA-52025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: Found Course with identity: JAV-LEA-52025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+WARNING: Cannot add Course - already exists with identity: JAV-LEA-52025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Anna, Lozinska, yuriy.vasuluk@chnu.edu.ua, 2024-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: Found Student with identity: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+WARNING: Cannot add Student - already exists with identity: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: Found Student with identity: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository removeByIdentity
+INFO: Removed Student by identity: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository clear
+INFO: Cleared repository. Removed 1 Student items
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Dina, Krasova, dina.krasova@chnu.edu.ua, 2025-11-29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Physical education, Sports activity, 3, 2025-12-29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Natalia, Marinova, 10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: dina.krasova@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: dina.krasova@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: Found Student with identity: dina.krasova@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Course found with identity: PHY-SPO-32025-12-29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Course: PHY-SPO-32025-12-29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: Found Course with identity: PHY-SPO-32025-12-29
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: NATMARI-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: NATMARI-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: Found Instructor with identity: NATMARI-10
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository remove
+INFO: Removed Student: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: HALMEL-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: HALMEL-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: NONEXISTENT
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Student items. Count: 0
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: HALMEL-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: HALMEL-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: Found Instructor with identity: HALMEL-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+WARNING: Attempted to add null Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository removeByIdentity
+INFO: Removed Student by identity: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository removeByIdentity
+WARNING: Attempted to remove Student with null identity
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for CustomStudent
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No CustomStudent found with identity: Yuriy-Vasuluk
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added CustomStudent: Yuriy-Vasuluk
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: Found CustomStudent with identity: Yuriy-Vasuluk
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: anastasiya.vin@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: INT-BAS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: INT-BAS
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Module found with identity: ADV-DEE
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Module: ADV-DEE
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Module items. Count: 2
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: HALMEL-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: HALMEL-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Instructor found with identity: VASKOS-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Instructor: VASKOS-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+WARNING: Attempted to find Student with null identity
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: mariya.shevchuk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: mariya.shevchuk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: Found Student with identity: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: mariya.shevchuk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: mariya.shevchuk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: Found Student with identity: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: mariya.shevchuk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: mariya.shevchuk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: Found Student with identity: mariya.shevchuk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository clear
+INFO: Cleared repository. Removed 0 Course items
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Course found with identity: JAV-LEA-52025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Course: JAV-LEA-52025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Course found with identity: DAT-ADV-42025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Course: DAT-ADV-42025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository clear
+INFO: Cleared repository. Removed 2 Course items
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Course items. Count: 0
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Student items. Count: 2
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository getAll
+INFO: Retrieved all Student items. Count: 2
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Course found with identity: JAV-LEA-52025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Course: JAV-LEA-52025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository removeByIdentity
+WARNING: No Student found with identity: nonexistent@test.com to remove
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: mariya.shevchuk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: mariya.shevchuk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository remove
+WARNING: Attempted to remove null Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: Found Student with identity: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository clear
+INFO: Cleared repository. Removed 1 Student items
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: alice.rotar@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Student
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Course
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Instructor
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository &lt;init&gt;
+INFO: Created repository for Module
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Yuriy, Vasuluk, yuriy.vasuluk@chnu.edu.ua, 2023-09-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Alice, Rotar, alice.rotar@chnu.edu.ua, 2024-01-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Student &lt;init&gt;
+INFO: Student created successfully: Mariya, Shevchuk, mariya.shevchuk@chnu.edu.ua, 2024-02-20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Java Programming, Learn Java basics, 5, 2025-03-01
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Course &lt;init&gt;
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-04-15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Haluna, Melnuk, 15
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.Instructor &lt;init&gt;
+INFO: Instructor created successfully: Vasyl, Kosovan, 20
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.model.myModule &lt;init&gt;
+INFO: Module created successfully: Advanced Topics, Deep dive
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository findByIdentity
+INFO: No Student found with identity: yuriy.vasuluk@chnu.edu.ua
+нояб. 29, 2025 9:46:46 PM ua.onlinecourses.repository.GenericRepository add
+INFO: Added Student: yuriy.vasuluk@chnu.edu.ua
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.14</a> at 29 нояб. 2025 г., 21:46:46</p>
+</div>
+</div>
+</body>
+</html>

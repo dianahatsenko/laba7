@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - AppConfig Tests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>AppConfig Tests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ua.onlinecourses.config.html">ua.onlinecourses.config</a> &gt; AppConfigTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">12</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.107s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard error</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">getAllProperties should return non-null Properties</td>
+<td class="success">testGetAllProperties()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getBaseDataPath should return configured path</td>
+<td class="success">testGetBaseDataPath()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getBooleanProperty should return boolean value</td>
+<td class="success">testGetBooleanProperty()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getIntProperty should return integer value</td>
+<td class="success">testGetIntProperty()</td>
+<td class="success">0.057s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getIntProperty should return default for non-existent key</td>
+<td class="success">testGetIntPropertyDefault()</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getJsonFilePath should return path for students</td>
+<td class="success">testGetJsonFilePathStudents()</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getJsonFilePath for unknown entity should use default</td>
+<td class="success">testGetJsonFilePathUnknownEntity()</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getProperty with default should return default for non-existent key</td>
+<td class="success">testGetPropertyWithDefault()</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getYamlFilePath should return path for courses</td>
+<td class="success">testGetYamlFilePathCourses()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getYamlFilePath for unknown entity should use default</td>
+<td class="success">testGetYamlFilePathUnknownEntity()</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">hasProperty should return true for existing property</td>
+<td class="success">testHasPropertyExisting()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">hasProperty should return false for non-existent property</td>
+<td class="success">testHasPropertyNonExistent()</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig getJsonFilePath
+WARNING: JSON filename not found for entity: unknown_entity. Using default.
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig getYamlFilePath
+WARNING: YAML filename not found for entity: unknown_entity. Using default.
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.14</a> at 29 нояб. 2025 г., 21:46:46</p>
+</div>
+</div>
+</body>
+</html>

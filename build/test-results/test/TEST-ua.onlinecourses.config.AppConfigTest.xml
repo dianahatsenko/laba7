@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AppConfig Tests" tests="12" skipped="0" failures="0" errors="0" timestamp="2025-11-29T19:46:44.729Z" hostname="DIANACOMP" time="0.122">
+  <properties/>
+  <testcase name="getIntProperty should return integer value" classname="ua.onlinecourses.config.AppConfigTest" time="0.057"/>
+  <testcase name="getIntProperty should return default for non-existent key" classname="ua.onlinecourses.config.AppConfigTest" time="0.005"/>
+  <testcase name="getJsonFilePath should return path for students" classname="ua.onlinecourses.config.AppConfigTest" time="0.005"/>
+  <testcase name="getJsonFilePath for unknown entity should use default" classname="ua.onlinecourses.config.AppConfigTest" time="0.005"/>
+  <testcase name="getAllProperties should return non-null Properties" classname="ua.onlinecourses.config.AppConfigTest" time="0.004"/>
+  <testcase name="getProperty with default should return default for non-existent key" classname="ua.onlinecourses.config.AppConfigTest" time="0.007"/>
+  <testcase name="hasProperty should return false for non-existent property" classname="ua.onlinecourses.config.AppConfigTest" time="0.005"/>
+  <testcase name="getBooleanProperty should return boolean value" classname="ua.onlinecourses.config.AppConfigTest" time="0.003"/>
+  <testcase name="hasProperty should return true for existing property" classname="ua.onlinecourses.config.AppConfigTest" time="0.004"/>
+  <testcase name="getBaseDataPath should return configured path" classname="ua.onlinecourses.config.AppConfigTest" time="0.003"/>
+  <testcase name="getYamlFilePath for unknown entity should use default" classname="ua.onlinecourses.config.AppConfigTest" time="0.005"/>
+  <testcase name="getYamlFilePath should return path for courses" classname="ua.onlinecourses.config.AppConfigTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig getJsonFilePath
+WARNING: JSON filename not found for entity: unknown_entity. Using default.
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig getYamlFilePath
+WARNING: YAML filename not found for entity: unknown_entity. Using default.
+нояб. 29, 2025 9:46:44 PM ua.onlinecourses.config.AppConfig loadProperties
+INFO: Configuration loaded successfully from: config.properties
+]]></system-err>
+</testsuite>

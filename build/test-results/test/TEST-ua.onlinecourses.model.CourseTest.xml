@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ua.onlinecourses.model.CourseTest" tests="27" skipped="0" failures="0" errors="0" timestamp="2025-11-29T19:46:45.075Z" hostname="DIANACOMP" time="0.214">
+  <properties/>
+  <testcase name="[1] Java Programming, Learn Java basics and OOP, 3, 2025-06-01" classname="ua.onlinecourses.model.CourseTest" time="0.025"/>
+  <testcase name="[2] Data Structures, Advanced algorithms and data structures, 4, 2025-03-15" classname="ua.onlinecourses.model.CourseTest" time="0.005"/>
+  <testcase name="[3] Python, Introduction to Python, 2, 2025-09-20" classname="ua.onlinecourses.model.CourseTest" time="0.003"/>
+  <testcase name="[1] Java Programming, Learn Java basics, 3, 2025-06-01, JAV-LEA-32025-06-01" classname="ua.onlinecourses.model.CourseTest" time="0.01"/>
+  <testcase name="[2] Data Structures, Advanced algorithms, 4, 2025-03-15, DAT-ADV-42025-03-15" classname="ua.onlinecourses.model.CourseTest" time="0.004"/>
+  <testcase name="[3] Python, Introduction, 2, 2025-09-20, PYT-INT-22025-09-20" classname="ua.onlinecourses.model.CourseTest" time="0.004"/>
+  <testcase name="[1] Java Programming,Learn Java basics,3,2025-06-01&#10;Python,Introduction to Python,2,2025-03-15, 2, Java Programming, Learn Java basics" classname="ua.onlinecourses.model.CourseTest" time="0.016"/>
+  <testcase name="[2] Data Structures,Advanced algorithms,4,2025-03-15, 1, Data Structures, Advanced algorithms" classname="ua.onlinecourses.model.CourseTest" time="0.008"/>
+  <testcase name="[3] # Comment&#10;Algorithms,Study of algorithms,5,2025-05-10&#10;&#10;Databases,Database management,3,2025-02-01, 2, Algorithms, Study of algorithms" classname="ua.onlinecourses.model.CourseTest" time="0.009"/>
+  <testcase name="[4] , 0, null, null" classname="ua.onlinecourses.model.CourseTest" time="0.007"/>
+  <testcase name="testGetFullNameThrowsExceptionForShortTitle()" classname="ua.onlinecourses.model.CourseTest" time="0.004"/>
+  <testcase name="testInvalidStartDateTooFar()" classname="ua.onlinecourses.model.CourseTest" time="0.003"/>
+  <testcase name="testInvalidStartDateTooOld()" classname="ua.onlinecourses.model.CourseTest" time="0.004"/>
+  <testcase name="[1] 0" classname="ua.onlinecourses.model.CourseTest" time="0.004"/>
+  <testcase name="[2] -1" classname="ua.onlinecourses.model.CourseTest" time="0.002"/>
+  <testcase name="[3] 6" classname="ua.onlinecourses.model.CourseTest" time="0.003"/>
+  <testcase name="[4] 10" classname="ua.onlinecourses.model.CourseTest" time="0.003"/>
+  <testcase name="[1] " classname="ua.onlinecourses.model.CourseTest" time="0.004"/>
+  <testcase name="[2]    " classname="ua.onlinecourses.model.CourseTest" time="0.003"/>
+  <testcase name="testGetFullNameThrowsExceptionForShortDescription()" classname="ua.onlinecourses.model.CourseTest" time="0.005"/>
+  <testcase name="testFileNotFound()" classname="ua.onlinecourses.model.CourseTest" time="0.004"/>
+  <testcase name="[1] " classname="ua.onlinecourses.model.CourseTest" time="0.003"/>
+  <testcase name="[2]    " classname="ua.onlinecourses.model.CourseTest" time="0.003"/>
+  <testcase name="[3] Economics for computer science students analytics and learners of applied math and data structure First level include Math basics and risks So it will be great for future IT workers or programing workers" classname="ua.onlinecourses.model.CourseTest" time="0.002"/>
+  <testcase name="[1] Java Programming,Learn Java,3,2025-06-01&#10;Invalid Line&#10;Python,Intro,2,2025-03-15, 2" classname="ua.onlinecourses.model.CourseTest" time="0.012"/>
+  <testcase name="[2] Java,Description,10,2025-06-01&#10;Python,Intro,2,2025-03-15, 1" classname="ua.onlinecourses.model.CourseTest" time="0.009"/>
+  <testcase name="[3] Java,Description,3,2025-06-01&#10;Python,Intro,2,2025-03-15, 2" classname="ua.onlinecourses.model.CourseTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Java Programming, Learn Java basics and OOP, 3, 2025-06-01
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Data Structures, Advanced algorithms and data structures, 4, 2025-03-15
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Python, Introduction to Python, 2, 2025-09-20
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Java Programming, Learn Java basics, 3, 2025-06-01
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-03-15
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Python, Introduction, 2, 2025-09-20
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.CourseFileParser parseFromCSV
+INFO: Starting to parse courses from file: C:\Users\dinag\AppData\Local\Temp\junit2668069846211542716\courses.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Java Programming, Learn Java basics, 3, 2025-06-01
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.CourseFileParser parseFromCSV
+INFO: Parsed course from line 1: JAV-LEA-32025-06-01
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Python, Introduction to Python, 2, 2025-03-15
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.CourseFileParser parseFromCSV
+INFO: Parsed course from line 2: PYT-INT-22025-03-15
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.CourseFileParser parseFromCSV
+INFO: Successfully parsed 2 courses from file
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.CourseFileParser parseFromCSV
+INFO: Starting to parse courses from file: C:\Users\dinag\AppData\Local\Temp\junit13954277495674600984\courses.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Data Structures, Advanced algorithms, 4, 2025-03-15
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.CourseFileParser parseFromCSV
+INFO: Parsed course from line 1: DAT-ADV-42025-03-15
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.CourseFileParser parseFromCSV
+INFO: Successfully parsed 1 courses from file
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.CourseFileParser parseFromCSV
+INFO: Starting to parse courses from file: C:\Users\dinag\AppData\Local\Temp\junit14457026283632610656\courses.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Algorithms, Study of algorithms, 5, 2025-05-10
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.CourseFileParser parseFromCSV
+INFO: Parsed course from line 2: ALG-STU-52025-05-10
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Databases, Database management, 3, 2025-02-01
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.CourseFileParser parseFromCSV
+INFO: Parsed course from line 4: DAT-DAT-32025-02-01
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.CourseFileParser parseFromCSV
+INFO: Successfully parsed 2 courses from file
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.CourseFileParser parseFromCSV
+INFO: Starting to parse courses from file: C:\Users\dinag\AppData\Local\Temp\junit17766719308759359842\courses.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.CourseFileParser parseFromCSV
+INFO: Successfully parsed 0 courses from file
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: CS, Computer Science basics, 3, 2025-12-29
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Computer Science, CS, 3, 2025-12-29
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.CourseFileParser parseFromCSV
+INFO: Starting to parse courses from file: C:\Users\dinag\AppData\Local\Temp\junit6016356177856144678\courses.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Java Programming, Learn Java, 3, 2025-06-01
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.CourseFileParser parseFromCSV
+INFO: Parsed course from line 1: JAV-LEA-32025-06-01
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.CourseFileParser parseFromCSV
+WARNING: Failed to parse line 2: Line 2: Expected format 'title, description, credits, startDate', got: Invalid Line
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Python, Intro, 2, 2025-03-15
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.CourseFileParser parseFromCSV
+INFO: Parsed course from line 3: PYT-INT-22025-03-15
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.CourseFileParser parseFromCSV
+INFO: Successfully parsed 2 courses from file
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.CourseFileParser parseFromCSV
+INFO: Starting to parse courses from file: C:\Users\dinag\AppData\Local\Temp\junit3465828248538524564\courses.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.CourseFileParser parseFromCSV
+WARNING: Failed to parse line 1: Line 1: Invalid parameters
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Python, Intro, 2, 2025-03-15
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.CourseFileParser parseFromCSV
+INFO: Parsed course from line 2: PYT-INT-22025-03-15
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.CourseFileParser parseFromCSV
+INFO: Successfully parsed 1 courses from file
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.CourseFileParser parseFromCSV
+INFO: Starting to parse courses from file: C:\Users\dinag\AppData\Local\Temp\junit2215464687161491900\courses.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Java, Description, 3, 2025-06-01
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.CourseFileParser parseFromCSV
+INFO: Parsed course from line 1: JAV-DES-32025-06-01
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Course <init>
+INFO: Course created successfully: Python, Intro, 2, 2025-03-15
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.CourseFileParser parseFromCSV
+INFO: Parsed course from line 2: PYT-INT-22025-03-15
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.CourseFileParser parseFromCSV
+INFO: Successfully parsed 2 courses from file
+]]></system-err>
+</testsuite>

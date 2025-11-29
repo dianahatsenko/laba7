@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ua.onlinecourses.model.myModuleTest" tests="23" skipped="0" failures="0" errors="0" timestamp="2025-11-29T19:46:45.664Z" hostname="DIANACOMP" time="0.132">
+  <properties/>
+  <testcase name="[1] Introduction, Basic concepts, INT-BAS" classname="ua.onlinecourses.model.myModuleTest" time="0.007"/>
+  <testcase name="[2] Advanced Math, Complex topics, ADV-COM" classname="ua.onlinecourses.model.myModuleTest" time="0.004"/>
+  <testcase name="[3] Java Basics, Learning, JAV-LEA" classname="ua.onlinecourses.model.myModuleTest" time="0.004"/>
+  <testcase name="[4] Python, Programming, PYT-PRO" classname="ua.onlinecourses.model.myModuleTest" time="0.004"/>
+  <testcase name="[1] Introduction,Basic concepts&#10;Advanced,Complex topics, 2, Introduction, Basic concepts" classname="ua.onlinecourses.model.myModuleTest" time="0.013"/>
+  <testcase name="[2] Java Basics,Learn Java programming, 1, Java Basics, Learn Java programming" classname="ua.onlinecourses.model.myModuleTest" time="0.009"/>
+  <testcase name="[3] # Comment&#10;Algorithms,Study algorithms&#10;&#10;Databases,Database design, 2, Algorithms, Study algorithms" classname="ua.onlinecourses.model.myModuleTest" time="0.007"/>
+  <testcase name="[4] , 0, null, null" classname="ua.onlinecourses.model.myModuleTest" time="0.007"/>
+  <testcase name="testGetFullNameThrowsExceptionForShortTitle()" classname="ua.onlinecourses.model.myModuleTest" time="0.003"/>
+  <testcase name="testGetFullNameThrowsExceptionForShortContent()" classname="ua.onlinecourses.model.myModuleTest" time="0.004"/>
+  <testcase name="[1] " classname="ua.onlinecourses.model.myModuleTest" time="0.003"/>
+  <testcase name="[2]    " classname="ua.onlinecourses.model.myModuleTest" time="0.002"/>
+  <testcase name="[1] Introduction, Basic concepts and fundamentals" classname="ua.onlinecourses.model.myModuleTest" time="0.004"/>
+  <testcase name="[2] Advanced Topics, Deep dive into complex subjects" classname="ua.onlinecourses.model.myModuleTest" time="0.002"/>
+  <testcase name="[3] Java Basics, Learn Java programming" classname="ua.onlinecourses.model.myModuleTest" time="0.002"/>
+  <testcase name="testInvalidContentTooLong()" classname="ua.onlinecourses.model.myModuleTest" time="0.003"/>
+  <testcase name="testFileNotFound()" classname="ua.onlinecourses.model.myModuleTest" time="0.003"/>
+  <testcase name="[1] " classname="ua.onlinecourses.model.myModuleTest" time="0.003"/>
+  <testcase name="[2]    " classname="ua.onlinecourses.model.myModuleTest" time="0.002"/>
+  <testcase name="[3] Economics for computer science basic level introdaction for statistcs ans risks" classname="ua.onlinecourses.model.myModuleTest" time="0.002"/>
+  <testcase name="[1] Introduction,Basic concepts&#10;Invalid Line&#10;Advanced,Complex topics, 2" classname="ua.onlinecourses.model.myModuleTest" time="0.008"/>
+  <testcase name="[2] Ukrainion History for computer science learners,Content&#10;Advanced,Complex topics, 1" classname="ua.onlinecourses.model.myModuleTest" time="0.006"/>
+  <testcase name="[3] Title,&#10;Advanced,Complex topics, 1" classname="ua.onlinecourses.model.myModuleTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Advanced Math, Complex topics
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Java Basics, Learning
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Python, Programming
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.ModuleFileParser parseFromCSV
+INFO: Starting to parse modules from file: C:\Users\dinag\AppData\Local\Temp\junit6788620143023719771\modules.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.ModuleFileParser parseFromCSV
+INFO: Parsed module from line 1: INT-BAS
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Advanced, Complex topics
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.ModuleFileParser parseFromCSV
+INFO: Parsed module from line 2: ADV-COM
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.ModuleFileParser parseFromCSV
+INFO: Successfully parsed 2 modules from file
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.ModuleFileParser parseFromCSV
+INFO: Starting to parse modules from file: C:\Users\dinag\AppData\Local\Temp\junit13120200329798993790\modules.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Java Basics, Learn Java programming
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.ModuleFileParser parseFromCSV
+INFO: Parsed module from line 1: JAV-LEA
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.ModuleFileParser parseFromCSV
+INFO: Successfully parsed 1 modules from file
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.ModuleFileParser parseFromCSV
+INFO: Starting to parse modules from file: C:\Users\dinag\AppData\Local\Temp\junit11433976671526638936\modules.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Algorithms, Study algorithms
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.ModuleFileParser parseFromCSV
+INFO: Parsed module from line 2: ALG-STU
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Databases, Database design
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.ModuleFileParser parseFromCSV
+INFO: Parsed module from line 4: DAT-DAT
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.ModuleFileParser parseFromCSV
+INFO: Successfully parsed 2 modules from file
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.ModuleFileParser parseFromCSV
+INFO: Starting to parse modules from file: C:\Users\dinag\AppData\Local\Temp\junit5784402701091717198\modules.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.ModuleFileParser parseFromCSV
+INFO: Successfully parsed 0 modules from file
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: AB, Content description
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Title, AB
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Introduction, Basic concepts and fundamentals
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Advanced Topics, Deep dive into complex subjects
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Java Basics, Learn Java programming
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.ModuleFileParser parseFromCSV
+INFO: Starting to parse modules from file: C:\Users\dinag\AppData\Local\Temp\junit11410525798255546684\modules.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Introduction, Basic concepts
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.ModuleFileParser parseFromCSV
+INFO: Parsed module from line 1: INT-BAS
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.ModuleFileParser parseFromCSV
+WARNING: Failed to parse line 2: Line 2: Expected format 'title, content', got: Invalid Line
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Advanced, Complex topics
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.ModuleFileParser parseFromCSV
+INFO: Parsed module from line 3: ADV-COM
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.ModuleFileParser parseFromCSV
+INFO: Successfully parsed 2 modules from file
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.ModuleFileParser parseFromCSV
+INFO: Starting to parse modules from file: C:\Users\dinag\AppData\Local\Temp\junit1805085950293069905\modules.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.ModuleFileParser parseFromCSV
+WARNING: Failed to parse line 1: Line 1: Invalid parameters
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Advanced, Complex topics
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.ModuleFileParser parseFromCSV
+INFO: Parsed module from line 2: ADV-COM
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.ModuleFileParser parseFromCSV
+INFO: Successfully parsed 1 modules from file
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.ModuleFileParser parseFromCSV
+INFO: Starting to parse modules from file: C:\Users\dinag\AppData\Local\Temp\junit2372048200576033369\modules.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.ModuleFileParser parseFromCSV
+WARNING: Failed to parse line 1: Line 1: Expected format 'title, content', got: Title,
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.myModule <init>
+INFO: Module created successfully: Advanced, Complex topics
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.ModuleFileParser parseFromCSV
+INFO: Parsed module from line 2: ADV-COM
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.ModuleFileParser parseFromCSV
+INFO: Successfully parsed 1 modules from file
+]]></system-err>
+</testsuite>

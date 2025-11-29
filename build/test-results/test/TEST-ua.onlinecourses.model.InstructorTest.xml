@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ua.onlinecourses.model.InstructorTest" tests="28" skipped="0" failures="0" errors="0" timestamp="2025-11-29T19:46:45.293Z" hostname="DIANACOMP" time="0.166">
+  <properties/>
+  <testcase name="[1] " classname="ua.onlinecourses.model.InstructorTest" time="0.004"/>
+  <testcase name="[2]    " classname="ua.onlinecourses.model.InstructorTest" time="0.002"/>
+  <testcase name="[3] AlexAlexAlllleksandrErrorAaaaleksanderProblemAaalllekks" classname="ua.onlinecourses.model.InstructorTest" time="0.002"/>
+  <testcase name="[1] 0" classname="ua.onlinecourses.model.InstructorTest" time="0.004"/>
+  <testcase name="[2] -1" classname="ua.onlinecourses.model.InstructorTest" time="0.002"/>
+  <testcase name="[3] -5" classname="ua.onlinecourses.model.InstructorTest" time="0.002"/>
+  <testcase name="[4] 61" classname="ua.onlinecourses.model.InstructorTest" time="0.001"/>
+  <testcase name="[5] 100" classname="ua.onlinecourses.model.InstructorTest" time="0.002"/>
+  <testcase name="testGetFullNameThrowsExceptionForShortLastName()" classname="ua.onlinecourses.model.InstructorTest" time="0.004"/>
+  <testcase name="[1] Alexandrov, Maksym, 10, ALEMAK-10" classname="ua.onlinecourses.model.InstructorTest" time="0.006"/>
+  <testcase name="[2] Ivan, Danulyk, 25, IVADAN-25" classname="ua.onlinecourses.model.InstructorTest" time="0.003"/>
+  <testcase name="[3] Olga, Marchenko, 5, OLGMAR-5" classname="ua.onlinecourses.model.InstructorTest" time="0.003"/>
+  <testcase name="[4] Halyna, Unguryan, 60, HALUNG-60" classname="ua.onlinecourses.model.InstructorTest" time="0.002"/>
+  <testcase name="[1] Alexandrov,Maksym,10&#10;Ivan,Danulyk,25, 2, Alexandrov, Maksym" classname="ua.onlinecourses.model.InstructorTest" time="0.01"/>
+  <testcase name="[2] Halyna,Unguryan,5, 1, Halyna, Unguryan" classname="ua.onlinecourses.model.InstructorTest" time="0.006"/>
+  <testcase name="[3] # Comment&#10;Bob,Wilson,15&#10;&#10;Carol,Davis,20, 2, Bob, Wilson" classname="ua.onlinecourses.model.InstructorTest" time="0.008"/>
+  <testcase name="[4] , 0, null, null" classname="ua.onlinecourses.model.InstructorTest" time="0.005"/>
+  <testcase name="testGetFullNameThrowsExceptionForShortFirstName()" classname="ua.onlinecourses.model.InstructorTest" time="0.003"/>
+  <testcase name="[1] John, Doe, 10" classname="ua.onlinecourses.model.InstructorTest" time="0.006"/>
+  <testcase name="[2] Jane, Smith, 25" classname="ua.onlinecourses.model.InstructorTest" time="0.004"/>
+  <testcase name="[3] Alice, Brown, 5" classname="ua.onlinecourses.model.InstructorTest" time="0.005"/>
+  <testcase name="testFileNotFound()" classname="ua.onlinecourses.model.InstructorTest" time="0.005"/>
+  <testcase name="[1] " classname="ua.onlinecourses.model.InstructorTest" time="0.003"/>
+  <testcase name="[2]    " classname="ua.onlinecourses.model.InstructorTest" time="0.003"/>
+  <testcase name="[3] MaksymMaksymMaksymMaksymMaksymMaksymMaksymMaksymMaksymMaksymMaksymMaksymMaksymMaksymMaksymMaksymMaksym" classname="ua.onlinecourses.model.InstructorTest" time="0.003"/>
+  <testcase name="[1] John,Doe,10&#10;Invalid Line&#10;Jane,Smith,25, 2" classname="ua.onlinecourses.model.InstructorTest" time="0.013"/>
+  <testcase name="[2] John,Doe,100&#10;Jane,Smith,25, 1" classname="ua.onlinecourses.model.InstructorTest" time="0.009"/>
+  <testcase name="[3] John,Doe,10&#10;Jane,Smith,25, 2" classname="ua.onlinecourses.model.InstructorTest" time="0.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Olga, Ma, 10
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Alexandrov, Maksym, 10
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Ivan, Danulyk, 25
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Olga, Marchenko, 5
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Halyna, Unguryan, 60
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.InstructorFileParser parseFromCSV
+INFO: Starting to parse instructors from file: C:\Users\dinag\AppData\Local\Temp\junit13548401858708398414\instructors.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Alexandrov, Maksym, 10
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.InstructorFileParser parseFromCSV
+INFO: Parsed instructor from line 1: ALEMAK-10
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Ivan, Danulyk, 25
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.InstructorFileParser parseFromCSV
+INFO: Parsed instructor from line 2: IVADAN-25
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.InstructorFileParser parseFromCSV
+INFO: Successfully parsed 2 instructors from file
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.InstructorFileParser parseFromCSV
+INFO: Starting to parse instructors from file: C:\Users\dinag\AppData\Local\Temp\junit1426124007437543684\instructors.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Halyna, Unguryan, 5
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.InstructorFileParser parseFromCSV
+INFO: Parsed instructor from line 1: HALUNG-5
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.InstructorFileParser parseFromCSV
+INFO: Successfully parsed 1 instructors from file
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.InstructorFileParser parseFromCSV
+INFO: Starting to parse instructors from file: C:\Users\dinag\AppData\Local\Temp\junit2163435247050846189\instructors.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Bob, Wilson, 15
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.InstructorFileParser parseFromCSV
+INFO: Parsed instructor from line 2: BOBWIL-15
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Carol, Davis, 20
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.InstructorFileParser parseFromCSV
+INFO: Parsed instructor from line 4: CARDAV-20
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.InstructorFileParser parseFromCSV
+INFO: Successfully parsed 2 instructors from file
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.InstructorFileParser parseFromCSV
+INFO: Starting to parse instructors from file: C:\Users\dinag\AppData\Local\Temp\junit6763300796077418226\instructors.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.InstructorFileParser parseFromCSV
+INFO: Successfully parsed 0 instructors from file
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Ol, Marchenko, 10
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: John, Doe, 10
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Jane, Smith, 25
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Alice, Brown, 5
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.InstructorFileParser parseFromCSV
+INFO: Starting to parse instructors from file: C:\Users\dinag\AppData\Local\Temp\junit17682291988664160681\instructors.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: John, Doe, 10
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.InstructorFileParser parseFromCSV
+INFO: Parsed instructor from line 1: JOHDOE-10
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.InstructorFileParser parseFromCSV
+WARNING: Failed to parse line 2: Line 2: Expected format 'firstName, lastName, expertise', got: Invalid Line
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Jane, Smith, 25
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.InstructorFileParser parseFromCSV
+INFO: Parsed instructor from line 3: JANSMI-25
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.InstructorFileParser parseFromCSV
+INFO: Successfully parsed 2 instructors from file
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.InstructorFileParser parseFromCSV
+INFO: Starting to parse instructors from file: C:\Users\dinag\AppData\Local\Temp\junit9644670745878872648\instructors.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.InstructorFileParser parseFromCSV
+WARNING: Failed to parse line 1: Line 1: Invalid parameters
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Jane, Smith, 25
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.InstructorFileParser parseFromCSV
+INFO: Parsed instructor from line 2: JANSMI-25
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.InstructorFileParser parseFromCSV
+INFO: Successfully parsed 1 instructors from file
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.InstructorFileParser parseFromCSV
+INFO: Starting to parse instructors from file: C:\Users\dinag\AppData\Local\Temp\junit16574259039349476470\instructors.csv
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: John, Doe, 10
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.InstructorFileParser parseFromCSV
+INFO: Parsed instructor from line 1: JOHDOE-10
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.model.Instructor <init>
+INFO: Instructor created successfully: Jane, Smith, 25
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.InstructorFileParser parseFromCSV
+INFO: Parsed instructor from line 2: JANSMI-25
+нояб. 29, 2025 9:46:45 PM ua.onlinecourses.parser.InstructorFileParser parseFromCSV
+INFO: Successfully parsed 2 instructors from file
+]]></system-err>
+</testsuite>
